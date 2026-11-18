@@ -3,6 +3,8 @@
 Code, data and expected outputs for the IJITCS manuscript **PAPER021433**
 *“Evolution-Aware Monitoring for Evolving Information Systems: Multidimensional Drift Assessment with a Version-Dependent Reference Model”* (V. Lyashkevych).
 
+Repository: https://github.com/vasyllyashkevych/eam-reproducibility
+
 | Study | What it checks | How to reproduce | Database needed |
 |---|---|---|---|
 | A — controlled drift injection (RQ1) | evolution-state classification, Tables 5–6, Fig. 4 | `bash run_all.sh` | no |
