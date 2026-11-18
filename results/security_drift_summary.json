@@ -1,0 +1,83 @@
+{
+  "transitions": 245,
+  "security_events": 5,
+  "exposure_increases": 3,
+  "exposure_decreases": 2,
+  "snapshots_with_known_exposure": 14,
+  "advisories": 29,
+  "spearman_idi_vs_dsec": [
+    -0.118,
+    0.06461152358884005
+  ],
+  "spearman_idi_vs_abs_dd_sec": [
+    -0.067,
+    0.2934104062189242
+  ],
+  "spearman_code_drift_vs_dsec": [
+    -0.06,
+    0.3527920289490195
+  ],
+  "spearman_code_drift_vs_abs_dd_sec": [
+    -0.039,
+    0.5405887103045055
+  ],
+  "spearman_configuration_drift_vs_dsec": [
+    -0.042,
+    0.5109025318028484
+  ],
+  "spearman_configuration_drift_vs_abs_dd_sec": [
+    -0.025,
+    0.6998601893452073
+  ],
+  "spearman_semantic_drift_vs_dsec": [
+    -0.043,
+    0.5068612283247502
+  ],
+  "spearman_semantic_drift_vs_abs_dd_sec": [
+    -0.05,
+    0.43430751958754454
+  ],
+  "alert_static_recall_on_security_events": 0.0,
+  "alert_static_rate_elsewhere": 0.113,
+  "alert_ewma_recall_on_security_events": 0.0,
+  "alert_ewma_rate_elsewhere": 0.108,
+  "security_events_without_release": 2,
+  "exposure_increases_without_code_change": 2,
+  "known_exposure_days": 1152,
+  "advisories_with_release_track": 31,
+  "advisories_with_positive_window": 3,
+  "window_days_median_positive": 6.0,
+  "window_days_iqr_positive": [
+    5.0,
+    132.5
+  ],
+  "window_cvss_weighted_days": 260.6,
+  "pinned_releases": 454,
+  "pinned_with_any_advisory": 374,
+  "pinned_days_to_first_median": 1303.5,
+  "pinned_365d": {
+    "evaluable": 421,
+    "share_exposed": 0.216,
+    "share_ge_0.7": 0.162,
+    "mean": 0.164
+  },
+  "pinned_730d": {
+    "evaluable": 411,
+    "share_exposed": 0.311,
+    "share_ge_0.7": 0.214,
+    "mean": 0.241
+  },
+  "pinned_1825d": {
+    "evaluable": 351,
+    "share_exposed": 0.564,
+    "share_ge_0.7": 0.328,
+    "mean": 0.4
+  },
+  "pinned_by_repo_730d": {
+    "attrs": 0.0,
+    "gunicorn": 0.043,
+    "pyyaml": 0.37,
+    "tqdm": 0.362,
+    "urllib3": 0.573
+  }
+}

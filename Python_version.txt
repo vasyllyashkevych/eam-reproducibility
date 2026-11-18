@@ -1,0 +1,4 @@
+Python 3.14.0 (CPython, macOS 26.7.2, arm64)
+Verified package versions: see requirements.txt
+Optional: rsvg-convert 2.61.3 (only to rasterise Fig. 1-2 from SVG)
+conda was not used; environment.yml is therefore not provided.

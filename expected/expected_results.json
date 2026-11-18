@@ -1,0 +1,957 @@
+{
+ "description": "Numbers printed in PAPER021433 Final; tolerance = half a unit of the last printed digit unless stated. Table 7 values come from the deterministic re-run (study_b/run_study_b_offline.sh); run-time values in seconds are machine dependent and not checked. Testbed values (Table 8, Table 10, deployment counts) come from the PostgreSQL 17.11 testbed run of 18 November 2026 recorded in study_b/recorded/.",
+ "checks": [
+  {
+   "id": "A.C0.macro_f1",
+   "paper_value": 0.968,
+   "tolerance": 0.000500001,
+   "location": "Abstract; Table 5; Sec. 7.1",
+   "source_file": "results/controlled_runs.csv"
+  },
+  {
+   "id": "A.C0.accuracy",
+   "paper_value": 0.966,
+   "tolerance": 0.000500001,
+   "location": "Table 5",
+   "source_file": "results/controlled_runs.csv"
+  },
+  {
+   "id": "A.C.macro_f1",
+   "paper_value": 0.958,
+   "tolerance": 0.000500001,
+   "location": "Table 5",
+   "source_file": "results/controlled_runs.csv"
+  },
+  {
+   "id": "A.B.macro_f1",
+   "paper_value": 0.53,
+   "tolerance": 0.005000001,
+   "location": "Abstract; Table 5",
+   "source_file": "results/controlled_runs.csv"
+  },
+  {
+   "id": "A.A.macro_f1",
+   "paper_value": 0.167,
+   "tolerance": 0.000500001,
+   "location": "Table 5; Sec. 7.1",
+   "source_file": "results/controlled_runs.csv"
+  },
+  {
+   "id": "A.B.false_critical",
+   "paper_value": 14.5,
+   "tolerance": 0.050000001,
+   "location": "Table 5; Sec. 7.1",
+   "source_file": "results/controlled_runs.csv"
+  },
+  {
+   "id": "A.C0.false_critical",
+   "paper_value": 0.03,
+   "tolerance": 0.005000001,
+   "location": "Table 5",
+   "source_file": "results/controlled_runs.csv"
+  },
+  {
+   "id": "A.telemetry_only.macro_f1",
+   "paper_value": 0.121,
+   "tolerance": 0.000500001,
+   "location": "Table 5; Sec. 7.1",
+   "source_file": "results/controlled_runs.csv"
+  },
+  {
+   "id": "A.config_structure.macro_f1",
+   "paper_value": 0.685,
+   "tolerance": 0.000500001,
+   "location": "Table 5",
+   "source_file": "results/controlled_runs.csv"
+  },
+  {
+   "id": "A.tel_config_structure.macro_f1",
+   "paper_value": 0.666,
+   "tolerance": 0.000500001,
+   "location": "Table 5",
+   "source_file": "results/controlled_runs.csv"
+  },
+  {
+   "id": "A.release_static.macro_f1",
+   "paper_value": 0.861,
+   "tolerance": 0.000500001,
+   "location": "Table 5; Table 9",
+   "source_file": "results/controlled_runs.csv"
+  },
+  {
+   "id": "A.release_versioned.macro_f1",
+   "paper_value": 0.969,
+   "tolerance": 0.000500001,
+   "location": "Table 5; Table 9",
+   "source_file": "results/controlled_runs.csv"
+  },
+  {
+   "id": "A.release_static.false_critical",
+   "paper_value": 9.6,
+   "tolerance": 0.050000001,
+   "location": "Table 5; Sec. 7.1",
+   "source_file": "results/controlled_runs.csv"
+  },
+  {
+   "id": "A.evidence_gap_renormalised.macro_f1",
+   "paper_value": 0.922,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.1",
+   "source_file": "results/controlled_runs.csv"
+  },
+  {
+   "id": "A.evidence_gap_zero_filled.macro_f1",
+   "paper_value": 0.93,
+   "tolerance": 0.005000001,
+   "location": "Sec. 7.1",
+   "source_file": "results/controlled_runs.csv"
+  },
+  {
+   "id": "A.noise0.03.C0",
+   "paper_value": 0.855,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.1",
+   "source_file": "results/controlled_runs.csv"
+  },
+  {
+   "id": "A.noise0.05.C0",
+   "paper_value": 0.659,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.1",
+   "source_file": "results/controlled_runs.csv"
+  },
+  {
+   "id": "A.noise0.05.half.C0",
+   "paper_value": 0.359,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.1",
+   "source_file": "results/controlled_runs.csv"
+  },
+  {
+   "id": "A.friedman_chi2",
+   "paper_value": 114.5,
+   "tolerance": 0.050000001,
+   "location": "Sec. 7.1",
+   "source_file": "results/controlled_tests.csv"
+  },
+  {
+   "id": "A.C0_minus_C.diff",
+   "paper_value": 0.01,
+   "tolerance": 0.005000001,
+   "location": "Sec. 7.1",
+   "source_file": "results/controlled_tests.csv"
+  },
+  {
+   "id": "A.C0_minus_C.ci_low",
+   "paper_value": 0.006,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.1",
+   "source_file": "results/controlled_tests.csv"
+  },
+  {
+   "id": "A.C0_minus_C.ci_high",
+   "paper_value": 0.014,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.1",
+   "source_file": "results/controlled_tests.csv"
+  },
+  {
+   "id": "A.release_diff",
+   "paper_value": 0.108,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.1",
+   "source_file": "results/controlled_tests.csv"
+  },
+  {
+   "id": "A.weights.median",
+   "paper_value": 0.905,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.1",
+   "source_file": "results/controlled_weight_sensitivity.csv"
+  },
+  {
+   "id": "A.weights.q25",
+   "paper_value": 0.864,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.1",
+   "source_file": "results/controlled_weight_sensitivity.csv"
+  },
+  {
+   "id": "A.weights.q75",
+   "paper_value": 0.933,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.1",
+   "source_file": "results/controlled_weight_sensitivity.csv"
+  },
+  {
+   "id": "A.weights.min",
+   "paper_value": 0.653,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.1",
+   "source_file": "results/controlled_weight_sensitivity.csv"
+  },
+  {
+   "id": "A.theta0.50.recall",
+   "paper_value": 0.55,
+   "tolerance": 0.005000001,
+   "location": "Sec. 7.1",
+   "source_file": "results/controlled_theta_sensitivity.csv"
+  },
+  {
+   "id": "A.theta0.20.recall",
+   "paper_value": 0.88,
+   "tolerance": 0.005000001,
+   "location": "Sec. 7.1",
+   "source_file": "results/controlled_theta_sensitivity.csv"
+  },
+  {
+   "id": "A.context.recall_C0",
+   "paper_value": 0.09,
+   "tolerance": 0.005000001,
+   "location": "Table 6; Sec. 7.1",
+   "source_file": "results/controlled_prf_by_dim.csv"
+  },
+  {
+   "id": "J.dual.coverage",
+   "paper_value": 0.915,
+   "tolerance": 0.000500001,
+   "location": "Table 9",
+   "source_file": "results/dual_profile_runs.csv"
+  },
+  {
+   "id": "J.dual.recall_uniform",
+   "paper_value": 0.925,
+   "tolerance": 0.000500001,
+   "location": "Table 9; Sec. 9",
+   "source_file": "results/dual_profile_runs.csv"
+  },
+  {
+   "id": "J.dual.recall_coupled",
+   "paper_value": 0.858,
+   "tolerance": 0.000500001,
+   "location": "Table 9",
+   "source_file": "results/dual_profile_runs.csv"
+  },
+  {
+   "id": "J.dual.rebuilds",
+   "paper_value": 54.2,
+   "tolerance": 0.050000001,
+   "location": "Table 9; Sec. 7.4",
+   "source_file": "results/dual_profile_runs.csv"
+  },
+  {
+   "id": "J.full.rebuilds",
+   "paper_value": 355.5,
+   "tolerance": 0.050000001,
+   "location": "Table 9; Sec. 7.4",
+   "source_file": "results/dual_profile_runs.csv"
+  },
+  {
+   "id": "J.rebuild_ratio",
+   "paper_value": 6.6,
+   "tolerance": 0.050000001,
+   "location": "Sec. 7.4",
+   "source_file": "results/dual_profile_runs.csv"
+  },
+  {
+   "id": "J.versioned_run.recall_uniform",
+   "paper_value": 0.812,
+   "tolerance": 0.000500001,
+   "location": "Table 9; Sec. 7.4",
+   "source_file": "results/dual_profile_runs.csv"
+  },
+  {
+   "id": "J.rel_only.coverage",
+   "paper_value": 0.407,
+   "tolerance": 0.000500001,
+   "location": "Table 9; Sec. 7.4",
+   "source_file": "results/dual_profile_runs.csv"
+  },
+  {
+   "id": "J.rel_only.recall_uniform",
+   "paper_value": 0.466,
+   "tolerance": 0.000500001,
+   "location": "Table 9; Sec. 7.4",
+   "source_file": "results/dual_profile_runs.csv"
+  },
+  {
+   "id": "J.static.false_critical",
+   "paper_value": 9.6,
+   "tolerance": 0.050000001,
+   "location": "Table 9",
+   "source_file": "results/dual_profile_runs.csv"
+  },
+  {
+   "id": "J.versioned.false_critical",
+   "paper_value": 0.03,
+   "tolerance": 0.005000001,
+   "location": "Table 9",
+   "source_file": "results/dual_profile_runs.csv"
+  },
+  {
+   "id": "J.interaction.recall_uniform",
+   "paper_value": 0.113,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.4",
+   "source_file": "results/dual_profile_tests.csv"
+  },
+  {
+   "id": "J.interaction.recall_uniform.ci_low",
+   "paper_value": 0.09,
+   "tolerance": 0.005000001,
+   "location": "Sec. 7.4",
+   "source_file": "results/dual_profile_tests.csv"
+  },
+  {
+   "id": "J.interaction.recall_uniform.ci_high",
+   "paper_value": 0.136,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.4 (corrected from 0.137 in the previous draft)",
+   "source_file": "results/dual_profile_tests.csv"
+  },
+  {
+   "id": "J.interaction.coverage",
+   "paper_value": 0.103,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.4",
+   "source_file": "results/dual_profile_tests.csv"
+  },
+  {
+   "id": "J.interaction.recall_coupled",
+   "paper_value": 0.133,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.4",
+   "source_file": "results/dual_profile_tests.csv"
+  },
+  {
+   "id": "J.friedman_recall_uniform",
+   "paper_value": 236.7,
+   "tolerance": 0.050000001,
+   "location": "Sec. 7.4",
+   "source_file": "results/dual_profile_tests.csv"
+  },
+  {
+   "id": "J.mask_only.flagged",
+   "paper_value": 0,
+   "tolerance": 0,
+   "location": "Sec. 7.4",
+   "source_file": "results/dual_profile_shock_runs.csv"
+  },
+  {
+   "id": "J.criticalcheck.flagged",
+   "paper_value": 40,
+   "tolerance": 0,
+   "location": "Sec. 7.4",
+   "source_file": "results/dual_profile_shock_runs.csv"
+  },
+  {
+   "id": "C.snapshots",
+   "paper_value": 250,
+   "tolerance": 0,
+   "location": "Sec. 6.3",
+   "source_file": "results/security_drift_snapshots.csv"
+  },
+  {
+   "id": "C.transitions",
+   "paper_value": 245,
+   "tolerance": 0,
+   "location": "Sec. 6.3; 7.3",
+   "source_file": "results/security_drift_summary.json"
+  },
+  {
+   "id": "C.increases",
+   "paper_value": 3,
+   "tolerance": 0,
+   "location": "Sec. 7.3",
+   "source_file": "results/security_drift_summary.json"
+  },
+  {
+   "id": "C.decreases",
+   "paper_value": 2,
+   "tolerance": 0,
+   "location": "Sec. 7.3",
+   "source_file": "results/security_drift_summary.json"
+  },
+  {
+   "id": "C.other_transitions",
+   "paper_value": 240,
+   "tolerance": 0,
+   "location": "Sec. 7.3",
+   "source_file": "results/security_drift_summary.json"
+  },
+  {
+   "id": "C.code_recall",
+   "paper_value": 0.0,
+   "tolerance": 0,
+   "location": "Sec. 7.3",
+   "source_file": "results/security_drift_summary.json"
+  },
+  {
+   "id": "C.increases_low_idi",
+   "paper_value": 2,
+   "tolerance": 0,
+   "location": "Sec. 7.3",
+   "source_file": "results/security_drift_summary.json"
+  },
+  {
+   "id": "C.pinned_releases",
+   "paper_value": 454,
+   "tolerance": 0,
+   "location": "Sec. 6.3; 7.3",
+   "source_file": "results/security_drift_summary.json"
+  },
+  {
+   "id": "C.pinned_with_advisory",
+   "paper_value": 374,
+   "tolerance": 0,
+   "location": "Sec. 7.3",
+   "source_file": "results/security_drift_summary.json"
+  },
+  {
+   "id": "C.static_rate",
+   "paper_value": 0.113,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.3",
+   "source_file": "results/security_drift_summary.json"
+  },
+  {
+   "id": "C.ewma_rate",
+   "paper_value": 0.108,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.3",
+   "source_file": "results/security_drift_summary.json"
+  },
+  {
+   "id": "C.spearman_rho",
+   "paper_value": -0.118,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.3",
+   "source_file": "results/security_drift_summary.json"
+  },
+  {
+   "id": "C.spearman_p",
+   "paper_value": 0.065,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.3",
+   "source_file": "results/security_drift_summary.json"
+  },
+  {
+   "id": "C.pinned_1y_exposed",
+   "paper_value": 0.216,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.3",
+   "source_file": "results/security_drift_summary.json"
+  },
+  {
+   "id": "C.pinned_1y_ge07",
+   "paper_value": 0.162,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.3",
+   "source_file": "results/security_drift_summary.json"
+  },
+  {
+   "id": "C.pinned_2y_exposed",
+   "paper_value": 0.311,
+   "tolerance": 0.000500001,
+   "location": "Abstract-level; Sec. 7.3; Sec. 9",
+   "source_file": "results/security_drift_summary.json"
+  },
+  {
+   "id": "C.pinned_2y_ge07",
+   "paper_value": 0.214,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.3",
+   "source_file": "results/security_drift_summary.json"
+  },
+  {
+   "id": "C.pinned_5y_exposed",
+   "paper_value": 0.564,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.3",
+   "source_file": "results/security_drift_summary.json"
+  },
+  {
+   "id": "C.pinned_5y_ge07",
+   "paper_value": 0.328,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.3",
+   "source_file": "results/security_drift_summary.json"
+  },
+  {
+   "id": "C.urllib3_2y",
+   "paper_value": 0.573,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.3",
+   "source_file": "results/security_drift_summary.json"
+  },
+  {
+   "id": "C.attrs_2y",
+   "paper_value": 0.0,
+   "tolerance": 0.050000001,
+   "location": "Sec. 7.3",
+   "source_file": "results/security_drift_summary.json"
+  },
+  {
+   "id": "C.advisories_on_release_track",
+   "paper_value": 31,
+   "tolerance": 0,
+   "location": "Sec. 7.3",
+   "source_file": "results/security_exposure_windows.csv"
+  },
+  {
+   "id": "C.zero_window",
+   "paper_value": 28,
+   "tolerance": 0,
+   "location": "Sec. 7.3",
+   "source_file": "results/security_exposure_windows.csv"
+  },
+  {
+   "id": "C.longest_window_days",
+   "paper_value": 259,
+   "tolerance": 0,
+   "location": "Sec. 7.3",
+   "source_file": "results/security_exposure_windows.csv"
+  },
+  {
+   "id": "B.sim.S0.F1",
+   "paper_value": 0.369,
+   "tolerance": 0.000500001,
+   "location": "Abstract; Table 7",
+   "source_file": "results/study_b_table7.csv (from data/study_b_public/e2e_runs.csv)"
+  },
+  {
+   "id": "B.sim.S1.F1",
+   "paper_value": 0.479,
+   "tolerance": 0.000500001,
+   "location": "Table 7",
+   "source_file": "results/study_b_table7.csv (from data/study_b_public/e2e_runs.csv)"
+  },
+  {
+   "id": "B.sim.S2.F1",
+   "paper_value": 0.77,
+   "tolerance": 0.005000001,
+   "location": "Abstract; Table 7",
+   "source_file": "results/study_b_table7.csv (from data/study_b_public/e2e_runs.csv)"
+  },
+  {
+   "id": "B.sim.S3.F1",
+   "paper_value": 0.766,
+   "tolerance": 0.000500001,
+   "location": "Abstract; Table 7",
+   "source_file": "results/study_b_table7.csv (from data/study_b_public/e2e_runs.csv)"
+  },
+  {
+   "id": "B.sim.S3-O.F1",
+   "paper_value": 0.603,
+   "tolerance": 0.000500001,
+   "location": "Table 7",
+   "source_file": "results/study_b_table7.csv (from data/study_b_public/e2e_runs.csv)"
+  },
+  {
+   "id": "B.sim.S3.PCRw",
+   "paper_value": 0.674,
+   "tolerance": 0.000500001,
+   "location": "Table 7",
+   "source_file": "results/study_b_table7.csv (from data/study_b_public/e2e_runs.csv)"
+  },
+  {
+   "id": "B.sim.S2.PCRw",
+   "paper_value": 0.681,
+   "tolerance": 0.000500001,
+   "location": "Table 7",
+   "source_file": "results/study_b_table7.csv (from data/study_b_public/e2e_runs.csv)"
+  },
+  {
+   "id": "B.sim.S1.MRSR",
+   "paper_value": 0.269,
+   "tolerance": 0.000500001,
+   "location": "Table 7",
+   "source_file": "results/study_b_table7.csv (from data/study_b_public/e2e_runs.csv)"
+  },
+  {
+   "id": "B.sim.S3.slots",
+   "paper_value": 16449,
+   "tolerance": 0.5,
+   "location": "Sec. 7.2",
+   "source_file": "results/study_b_table7.csv (from data/study_b_public/e2e_runs.csv)"
+  },
+  {
+   "id": "B.sim.S2.slots",
+   "paper_value": 17892,
+   "tolerance": 0.5,
+   "location": "Sec. 7.2",
+   "source_file": "results/study_b_table7.csv (from data/study_b_public/e2e_runs.csv)"
+  },
+  {
+   "id": "B.sim.friedman_chi2",
+   "paper_value": 153.6,
+   "tolerance": 0.050000001,
+   "location": "Sec. 7.2",
+   "source_file": "results/study_b_statistics.json"
+  },
+  {
+   "id": "B.sim.tost_p",
+   "paper_value": 0.001,
+   "tolerance": 0.001,
+   "location": "Sec. 7.2 (p < 0.001)",
+   "source_file": "results/study_b_statistics.json"
+  },
+  {
+   "id": "B.sim_ext.A-RX.F1",
+   "paper_value": 0.428,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.2",
+   "source_file": "results/study_b_statistics.json"
+  },
+  {
+   "id": "B.sim_ext.A-RV.F1",
+   "paper_value": 0.537,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.2",
+   "source_file": "results/study_b_statistics.json"
+  },
+  {
+   "id": "B.sim_ext.S3-9D.F1",
+   "paper_value": 0.765,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.2",
+   "source_file": "results/study_b_statistics.json"
+  },
+  {
+   "id": "B.sim_ext.S3.F1",
+   "paper_value": 0.766,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.2",
+   "source_file": "results/study_b_statistics.json"
+  },
+  {
+   "id": "B.sim_ext.S3_minus_ARV",
+   "paper_value": 0.229,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.2",
+   "source_file": "results/study_b_statistics.json"
+  },
+  {
+   "id": "B.testbed.S0.F1",
+   "paper_value": 0.097,
+   "tolerance": 0.000500001,
+   "location": "Abstract; Table 8",
+   "source_file": "results/study_b_table8.csv (from data/study_b_public/ops_runs_method.csv)"
+  },
+  {
+   "id": "B.testbed.S3.F1",
+   "paper_value": 0.519,
+   "tolerance": 0.000500001,
+   "location": "Abstract; Table 8",
+   "source_file": "results/study_b_table8.csv (from data/study_b_public/ops_runs_method.csv)"
+  },
+  {
+   "id": "B.testbed.S2.F1",
+   "paper_value": 0.54,
+   "tolerance": 0.000500001,
+   "location": "Abstract; Table 8",
+   "source_file": "results/study_b_table8.csv (from data/study_b_public/ops_runs_method.csv)"
+  },
+  {
+   "id": "B.testbed.A-RV.F1",
+   "paper_value": 0.485,
+   "tolerance": 0.000500001,
+   "location": "Table 8",
+   "source_file": "results/study_b_table8.csv (from data/study_b_public/ops_runs_method.csv)"
+  },
+  {
+   "id": "B.testbed.S3.overhead_ms",
+   "paper_value": 2056,
+   "tolerance": 0.5,
+   "location": "Sec. 7.2",
+   "source_file": "results/study_b_table8.csv (from data/study_b_public/ops_runs_method.csv)"
+  },
+  {
+   "id": "B.testbed.workload_ms",
+   "paper_value": 536,
+   "tolerance": 0.5,
+   "location": "Sec. 7.2",
+   "source_file": "results/study_b_table8.csv (from data/study_b_public/ops_runs_method.csv)"
+  },
+  {
+   "id": "B.testbed.S3_minus_S0",
+   "paper_value": 0.422,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.2",
+   "source_file": "results/study_b_statistics.json"
+  },
+  {
+   "id": "B.testbed.S3_minus_S0.ci_low",
+   "paper_value": 0.396,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.2",
+   "source_file": "results/study_b_statistics.json"
+  },
+  {
+   "id": "B.testbed.S3_minus_S0.ci_high",
+   "paper_value": 0.449,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.2",
+   "source_file": "results/study_b_statistics.json"
+  },
+  {
+   "id": "B.testbed.S3_minus_ARV",
+   "paper_value": 0.035,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.2",
+   "source_file": "results/study_b_statistics.json"
+  },
+  {
+   "id": "B.testbed.S2_minus_S3",
+   "paper_value": 0.021,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.2",
+   "source_file": "results/study_b_statistics.json"
+  },
+  {
+   "id": "B.testbed.S2_vs_S3.p_holm",
+   "paper_value": 0.018,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.2",
+   "source_file": "results/study_b_statistics.json"
+  },
+  {
+   "id": "B.sim_vs_testbed_spearman",
+   "paper_value": 0.76,
+   "tolerance": 0.005000001,
+   "location": "Sec. 7.2",
+   "source_file": "results/study_b_statistics.json"
+  },
+  {
+   "id": "B.drift.context_share",
+   "paper_value": 0.603,
+   "tolerance": 0.0005,
+   "location": "Sec. 7.2 (60.3%)",
+   "source_file": "data/study_b_public/e2e_drift9_summary.csv"
+  },
+  {
+   "id": "B.drift.role_share",
+   "paper_value": 0.024,
+   "tolerance": 0.0005,
+   "location": "Sec. 7.2 (2.4%)",
+   "source_file": "data/study_b_public/e2e_drift9_summary.csv"
+  },
+  {
+   "id": "B.failure.EDI_auc",
+   "paper_value": 0.639,
+   "tolerance": 0.000500001,
+   "location": "Abstract; Table 10",
+   "source_file": "data/study_b_public/boundary_failure_prediction.csv (precomputed; inputs restricted)"
+  },
+  {
+   "id": "B.failure.size_auc",
+   "paper_value": 0.588,
+   "tolerance": 0.000500001,
+   "location": "Table 10",
+   "source_file": "data/study_b_public/boundary_failure_prediction.csv (precomputed; inputs restricted)"
+  },
+  {
+   "id": "dtest:coverage|dual (proposed) - static/both|diff",
+   "paper_value": 0.082,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.4",
+   "source_file": "results/dual_profile_tests.csv"
+  },
+  {
+   "id": "dtest:coverage|dual (proposed) - static/both|ci_low",
+   "paper_value": 0.073,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.4",
+   "source_file": "results/dual_profile_tests.csv"
+  },
+  {
+   "id": "dtest:coverage|dual (proposed) - static/both|ci_high",
+   "paper_value": 0.09,
+   "tolerance": 0.005000001,
+   "location": "Sec. 7.4",
+   "source_file": "results/dual_profile_tests.csv"
+  },
+  {
+   "id": "dtest:recall_uniform|dual (proposed) - static/both|diff",
+   "paper_value": 0.07,
+   "tolerance": 0.005000001,
+   "location": "Sec. 7.4",
+   "source_file": "results/dual_profile_tests.csv"
+  },
+  {
+   "id": "dtest:recall_uniform|dual (proposed) - static/both|ci_low",
+   "paper_value": 0.043,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.4",
+   "source_file": "results/dual_profile_tests.csv"
+  },
+  {
+   "id": "dtest:recall_uniform|dual (proposed) - static/both|ci_high",
+   "paper_value": 0.097,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.4",
+   "source_file": "results/dual_profile_tests.csv"
+  },
+  {
+   "id": "dtest:recall_uniform|dual (proposed) - static/both|a12",
+   "paper_value": 0.75,
+   "tolerance": 0.005000001,
+   "location": "Sec. 7.4",
+   "source_file": "results/dual_profile_tests.csv"
+  },
+  {
+   "id": "dtest:recall_uniform|dual (proposed) - full regeneration|diff",
+   "paper_value": -0.03,
+   "tolerance": 0.005000001,
+   "location": "Sec. 7.4",
+   "source_file": "results/dual_profile_tests.csv"
+  },
+  {
+   "id": "dtest:recall_uniform|dual (proposed) - full regeneration|ci_low",
+   "paper_value": -0.04,
+   "tolerance": 0.005000001,
+   "location": "Sec. 7.4",
+   "source_file": "results/dual_profile_tests.csv"
+  },
+  {
+   "id": "dtest:recall_uniform|dual (proposed) - full regeneration|ci_high",
+   "paper_value": -0.02,
+   "tolerance": 0.005000001,
+   "location": "Sec. 7.4",
+   "source_file": "results/dual_profile_tests.csv"
+  },
+  {
+   "id": "dtest:recall_uniform|dual (proposed) - dual, incomplete PHI|diff",
+   "paper_value": 0.075,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.4",
+   "source_file": "results/dual_profile_tests.csv"
+  },
+  {
+   "id": "dtest:recall_uniform|dual (proposed) - dual, incomplete PHI|ci_low",
+   "paper_value": 0.06,
+   "tolerance": 0.005000001,
+   "location": "Sec. 7.4",
+   "source_file": "results/dual_profile_tests.csv"
+  },
+  {
+   "id": "dtest:recall_uniform|dual (proposed) - dual, incomplete PHI|ci_high",
+   "paper_value": 0.091,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.4",
+   "source_file": "results/dual_profile_tests.csv"
+  },
+  {
+   "id": "B.units",
+   "paper_value": 1802,
+   "tolerance": 0,
+   "location": "Abstract; Sec. 6.2",
+   "source_file": "data/study_b_public/study_b_counts.json"
+  },
+  {
+   "id": "B.units_production",
+   "paper_value": 1060,
+   "tolerance": 0,
+   "location": "Sec. 6.2",
+   "source_file": "data/study_b_public/study_b_counts.json"
+  },
+  {
+   "id": "B.units_deployed",
+   "paper_value": 795,
+   "tolerance": 0,
+   "location": "Sec. 6.2",
+   "source_file": "data/study_b_public/study_b_counts.json"
+  },
+  {
+   "id": "B.routines_instrumented",
+   "paper_value": 290,
+   "tolerance": 0,
+   "location": "Sec. 6.2",
+   "source_file": "data/study_b_public/study_b_counts.json"
+  },
+  {
+   "id": "B.objects_oracle",
+   "paper_value": 2678,
+   "tolerance": 0,
+   "location": "Sec. 6.2",
+   "source_file": "data/study_b_public/e2e_structure_stats.json"
+  },
+  {
+   "id": "B.objects_pg",
+   "paper_value": 2910,
+   "tolerance": 0,
+   "location": "Sec. 6.2",
+   "source_file": "data/study_b_public/e2e_structure_stats.json"
+  },
+  {
+   "id": "B.observation_slots",
+   "paper_value": 19595,
+   "tolerance": 0,
+   "location": "Sec. 6.2",
+   "source_file": "data/study_b_public/e2e_model_info.json"
+  },
+  {
+   "id": "B.units_with_drift",
+   "paper_value": 1511,
+   "tolerance": 0,
+   "location": "Sec. 7.2",
+   "source_file": "data/study_b_public/e2e_model_info.json"
+  },
+  {
+   "id": "B.context_assumptions",
+   "paper_value": 15,
+   "tolerance": 0,
+   "location": "Sec. 6.2; Table 2",
+   "source_file": "data/study_b_public/e2e_ctx_checks.csv"
+  },
+  {
+   "id": "B.failure.units",
+   "paper_value": 442,
+   "tolerance": 0,
+   "location": "Sec. 7.5; Table 10",
+   "source_file": "data/study_b_public/boundary_summary.json"
+  },
+  {
+   "id": "B.failure.failing",
+   "paper_value": 108,
+   "tolerance": 0,
+   "location": "Sec. 7.5; Table 10",
+   "source_file": "data/study_b_public/boundary_summary.json"
+  },
+  {
+   "id": "B.failure.top1",
+   "paper_value": 3,
+   "tolerance": 0,
+   "location": "Sec. 7.5",
+   "source_file": "data/study_b_public/boundary_summary.json"
+  },
+  {
+   "id": "B.rho_policy_security",
+   "paper_value": 0.94,
+   "tolerance": 0.0050000010000000004,
+   "location": "Sec. 4.4",
+   "source_file": "data/study_b_public/e2e_drift9_corr.csv"
+  },
+  {
+   "id": "B.failure.rank",
+   "paper_value": 3.36,
+   "tolerance": 0.0050000010000000004,
+   "location": "Sec. 7.5",
+   "source_file": "data/study_b_public/boundary_summary.json"
+  },
+  {
+   "id": "B.failure.chance_rank",
+   "paper_value": 4.01,
+   "tolerance": 0.0050000010000000004,
+   "location": "Sec. 7.5",
+   "source_file": "data/study_b_public/boundary_summary.json"
+  },
+  {
+   "id": "B.sim.S2_vs_S3.p_holm",
+   "paper_value": 0.009,
+   "tolerance": 0.000500001,
+   "location": "Sec. 7.2",
+   "source_file": "results/study_b_statistics.json"
+  }
+ ]
+}

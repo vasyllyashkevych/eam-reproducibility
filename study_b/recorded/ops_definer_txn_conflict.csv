@@ -1,0 +1,306 @@
+ident
+"u0027.sp_u13s_n1w(character varying,character varying)"
+u0037.sp_d16s(text)
+u0114_l1m.p31_2()
+"u0040.sp_u13s_n1w(character varying,character varying)"
+u0041.i4t_d3g(character varying)
+u0050.sp_d18t(text)
+u0017.sp_g1t_p5g_r4t_d5s_t2t()
+u0049.p21_t2t()
+"u0045.l1m_s2t_c4g_f2e_l2d_m1t(text,text)"
+u0069.sp_r14r(character varying)
+u0111.sp_u18d()
+u0099.sp_t6e_s5g_t3e(text)
+"u0107.sp_i23k(character varying,character varying)"
+u0112.sp_u14d_d5g(text)
+u0115.t6e_t3e_if_e4s(text)
+"u0130.sp_u19s_2(character varying,integer)"
+u0150.sp_r20s_2()
+"u0145.sp_u4e_b3h_s4s(numeric,text,text)"
+u0146.r1l_i2o_w2y_j1b_pr()
+u0147.sp_b3h_a3t_t3k(character varying)
+u0160.sp_u13s(character varying)
+u0169.p1c_l1g_e3r_d5s()
+u0207.r1l_i2o_d1y_j1b_pr()
+"u0214.sp_u4e_m4r_a8s(character varying,character varying)"
+u0220.sp_u19s_5(numeric)
+"u0242.l1m_s2t_c4g_f2e_l2d(text,text)"
+u0257.sp_d4e_u2r(integer)
+u0274_u12y.t8d_2()
+"u0281.sp_u4e_r4k_s4s(character varying,character varying)"
+"u0531.sp_wf_u4e_s4s(numeric,character varying,character varying,character varying,character varying)"
+"u0532.u4e_t2p_c14f(numeric,numeric,numeric,numeric)"
+u0537_c4a.p1c_u61_p2p_f1x()
+"u0540.p1c_g1n_pm_o5e_e4t(numeric,character varying,character varying,character varying,character varying)"
+u0541_c4a_e5k.u65_p1c_mi_m1n_u1d_t()
+"u0547.p1c_b3h_g7s_p6c(text,text,text)"
+u0548.j1b_m5r_pr()
+"u0551.p1c_g1t_p5y_c4m_pm(text,integer)"
+"u0561.p1c_g1n_pm_s4s(numeric,text)"
+u0610.l1m_m1r_f2d_r5y_i3t(character varying)
+u0562.sp_r8e_m7s()
+u0563_p5d_3.p1c_b2k_d4e(text)
+"u0565.u4e_t2p_c4o(bigint,bigint,bigint,bigint)"
+u0568_a62.u2t_l4t_p3s_a1t_t1b_v1_0()
+"u0569.p1c_g1t_c1p_d2s(character varying,character varying,refcursor)"
+u0573_c4a.p1c_t2p_2(text)
+"u0576.sp_pm_p3s_s4h(text,text,text)"
+u0578_a62.db_s4t_h4r_f4r_v1()
+"u0580_p5d_3.p1c_e4t_p7r_s2e(character varying,character varying,character varying,character varying,integer)"
+"u0583_g7d.p1c_f2e_e4t_s2e(character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying)"
+"u0586.sp_u4e_s4s(numeric,character varying,character varying)"
+"u0587.g1t_r4t(integer,integer)"
+u0590_c4a_e5k.u65_p1c_ma_m1n_u1d_t()
+"u0594.sp_wf_d4e_a1l_p3s(numeric,character varying)"
+"u0596.sp_pl_pm_o5e_e4t(character varying,numeric)"
+u0602_d4c.d1f_m5y_a5e_pr()
+u0606_c4a_e5k.u65_p1c_ma_s1c_u1d()
+"u0607.g1n_pm_m1r_l2t(numeric,character varying)"
+"u0609.sp_c3k_t3e_e4s(text,text)"
+"u0612.p1c_o6e_di_b3h(integer,character varying,character varying,character varying)"
+"u0613.p1c_d4e_r2e(text,text,text,text)"
+"u0616.sp_c3k_u4d_pn_s4s(integer,character varying,character varying,character varying)"
+"u0617.d2p_t3e_if_e4s(text,text)"
+"u0620.sp_m4r_i5d_b3h(integer,text,refcursor)"
+u0624_c4a.p1c_m1t_d1y()
+u0625.p1c_a1t_g3e_i8d_c3t(character varying)
+"u0631.sp_pl_pm_e1p_g1t_c1t_s4s(text,numeric)"
+"u0633.p1c_c3k_i3t(numeric,character varying)"
+u0634_p5d_3.p1c_f2e_e4t_g8s(numeric)
+u0635_c4a.p1c_b3d_i1s(text)
+"u0637.sp_u4e_w1p_s3e(text,text,text)"
+u0642_c4a.p1c_u4e_c6a()
+"u0644_c4a.p1c_b1p_i4t(text,text,bigint)"
+"u0645.sp_i5d_b3h(integer,character varying)"
+"u0648.p1c_e4t_p7r_s2e(character varying,character varying,character varying,character varying,numeric)"
+"u0651.sp_u4e_s4s(integer,text,text,text)"
+"u0657.sp_i4t_i3t_p7s(numeric,bigint,numeric,numeric,text,text,text,bigint,text)"
+u0663.sp_wf_g1t_c6y(text)
+"u0665.sp_wf_c4e_m4r(integer,text,text,text,text,text,text,text,text)"
+"u0666.p1c_f2e_e4t_g8s(integer,refcursor)"
+"u0667.p1c_a1l_pm_s4s(bigint,character varying,character varying)"
+"u0668.p1c_g1n_pm_e4t_c3t_n1w(integer,character varying,refcursor)"
+"u0669.p1c_ip_t1p_m10r(text,text)"
+"u0671.sp_wf_c3k_d1l_e12s(numeric,character varying)"
+u0672_m1r_m1h.p1c_c11n_n1w(numeric)
+"u0673_p5d_2.sp_t1g_l1m_i4t(numeric,character varying,character varying,date,date,date,character varying,character varying,numeric,numeric,numeric,character varying,date)"
+u0675_c4a_e5k.u65_p1c_ma_m1n_u1d()
+u0680.p1c_e4t_s4s(text)
+"u0681.p1c_g1t_p5y_m6t(text,integer)"
+u0682.sp_o6e_m7s()
+u0684.u69_e1v_pu_m1s()
+u0687_c4a_e5k.u65_p1c_mi_m1n_u1d()
+"u0688.u4e_o_t2p_m1g_d10s(numeric,numeric,numeric)"
+"u0710_p5d_2.p1c_lc_g15n_p1b(character varying,numeric,character varying,numeric)"
+u0694_c4a.p1c_m6g_c2s_u4d_d1t()
+"u0695.t17s_i4t(text,text,text,text,text,integer,integer,text,text,text,integer,text,text,text,text)"
+"u0700.sp_wf_g1t_u4e(integer,text,text,text,refcursor)"
+"u0699_p5d_2.sp_pl_pm_e4t(text,numeric)"
+"u0703.sp_wf_g1t_b3h_m4r(integer,text,refcursor)"
+"u0707.p1c_a1d_c11n(text,numeric)"
+"u0709.p1c_g1t_c2s_e5n_e4t(integer,text,refcursor)"
+"u0711_p5d_3.sp_pl_pm_o5e_e4t_1(text,integer,refcursor)"
+"u0713.p1c_g1n_pm_o5e_q3e(text,refcursor)"
+"u0714.p1c_b3c_pm_e4t(text,numeric)"
+"u0717.p1c_g1n_pm_e4t_c3t(integer,character varying)"
+"u0718.g1n_pm_o4t_d5y(integer,text,text,refcursor)"
+"u0721.p1c_a1l_pm_m1r_l2t(integer,character varying,character varying,refcursor)"
+"u0723.p1c_a1l_pm_o5e_e4t(numeric,text,text,text,text,text)"
+u0722_c4a.p1c_c6y_s2c_f1x()
+u0726_c4a_e5k.u65_p1c_mi_s1c_u1d()
+u0728.sp_u4e_n2t_s6e(text)
+u0730.sp_g1t_c6e_r4t_r3s(text)
+"u0733.p1c_a1t_o5e_q3e(text,refcursor)"
+u0734_c4a.p1c_e1r_m1r_p1t_n1r_s6r()
+"u0737.p1c_g1t_r5d_p3s(text,text,text,text,refcursor)"
+"u0739.p1c_e4t_s4h_p2j(text,text,refcursor)"
+"u0738_p7r_3.sp_t1g_l1m_i4t(numeric,character varying,character varying,date,date,date,character varying,character varying,numeric,numeric,numeric,character varying,date)"
+"u0740.sp_mo_c4e_b3h(text,text,text,text,text,text)"
+u0752_a62.p1c_u_a5s_v10n()
+u0760.a1t_c5e_q3e_m1r(character varying)
+"u0793.sp_t2p_a12a_i4t(text,text,text,text,text,text,text,text,text,text,text,text,text,text,text,text,text,text,text,text,text,text,text,text,text,text,text,text,text)"
+u0768_d4c.d1f_h5y_m5y()
+u0775_a62.c4e_n1w_g3p_d_v1_0(character varying)
+"u0777.u4e_t2p_m1g_s6t(numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric)"
+"u0779.g1n_pm_q3e_m5r(text,numeric,text,text)"
+"u0784.p1c_i3t_p3s_c1t(numeric,character varying,character varying,character varying)"
+"u0790.ws_g1t_p3d_a2s(refcursor,numeric,numeric,text,integer,integer)"
+"u0795.s2d_e3l_pr(character varying,character varying)"
+u0798_c4a.p1c_f1x_f2r_p1r_d2c_p2s()
+"u0800.c2l_d3y_a2t_s5y_pr(numeric,numeric,timestamp without time zone)"
+"u0802_a62.g1n_c1l_f2e_m1d_r3s_v1_1(character varying,character varying)"
+"u0803.p1c_a1t_f1n_g3p_m3d(character varying,character varying)"
+"u0804.u4e_t2p_c5t(numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric)"
+u0806.p1c_m5f_c3k_i3t(character varying)
+"u0811.p1c_a1t_f1n_g3p_m3d_n1w(text,text)"
+"u0816.a1t_m1r_x2f_q3e_m1r(character varying,numeric)"
+u0815_a62.a1t_b3k_c2e_r5e_n2l()
+u0817_c4a.p1c_b2l_u()
+"u0818_l1m.l1m_p8n_v1(character varying,character varying,character varying,character varying)"
+"u0819_u2r_s3y.p1c_u50_c3a_m1t_p1r_u1d(text,text)"
+"u0820.u4e_m5s_m1g_s6t(numeric,text,numeric,text,text,numeric)"
+u0821_c4a.p1c_l2d_d3y()
+"u0823.p1c_f1n_p3s_c1t_o3r_n2l(numeric,character varying,character varying,character varying,numeric,character varying)"
+"u0826.p1c_a1t_g1t_u7d_i4s(character varying,character varying,character varying)"
+"u0827_c4a.p1c_p5s_ed_pn_m4r_i2r(text,text)"
+"u0830.sp_i4t_m12a(numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric)"
+u0883.proc_count_d5s()
+"u0833.p1c_a1t_a4l_e4t(numeric,character varying,character varying,character varying)"
+"u0835.i1s_u1d_t2p_m1g_d10s(numeric,text,text,text,text,text,text,text,text,text,text,text,text,text,text,text,text)"
+u0836_p4f_2.p1c_p1u_b3c_p2p_f1x()
+"u0841.p1c_g1t_e7t(text,text,text)"
+"u0840.p1c_f1n_m1r_c6l_n2l(numeric,character varying,character varying,character varying)"
+u0839_c4a.ws_l2k_m5r_pr()
+"u0842.u4e_t2p_n10e(numeric,numeric,numeric,numeric,numeric,numeric,numeric)"
+"u0846.p1c_rm_f2c_s4d_p3s(numeric,text,text,text,text,text)"
+"u0847.i9s_4(numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric)"
+u0849.b6b_e3l_pr()
+"u0853_c4a.ws_g1t_p3d_a2s(numeric,numeric,text,integer,integer)"
+u0857_d4c.d1f_n1w_p2t_m3h_p3e_h2t()
+"u0860.sp_m1h_i4t(numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric)"
+"u0861.p1c_rm_f1f_s4d_p3s(numeric,text,text,text,text,text)"
+"u0863_p7r_3.p1c_lc_u4e(numeric,numeric,character varying,character varying,timestamp without time zone,timestamp without time zone,timestamp without time zone,character varying,character varying,numeric,numeric,numeric,character varying,character varying,character varying,character varying,character varying,character varying,timestamp without time zone)"
+"u0864.p1c_a1t_f1f_g3p_m3d(character varying,character varying)"
+"u0866.ws_g1t_p3d_e1t_a2s(numeric,numeric,text,integer,integer)"
+u0878_c4a.p1c_e1r_m1r_p1t_n1r_t3k_l2d()
+"u0872.g1n_pm_q3e_m5r(character varying,numeric,character varying,character varying)"
+"u0870.sp_p3s_v9s(numeric,character varying)"
+"u0873.sp_r2d_t3e_i4t(numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric)"
+"u0874.bm_c1g_a1l_b1m_s4s(numeric,numeric,numeric)"
+"u0877.s2d_e3l_pr(text,text)"
+u0880_c4a.p1c_p3s_m41_e2t()
+"u0879.p2t_s4h_p2c(text,text,text,text)"
+u0883.process_cf_data()
+"u0884.f3h_c1t_s6c_a8s(character varying,character varying)"
+"u0885.p1c_a1t_t6e_s3e(numeric,character varying,character varying,character varying)"
+"u0886.a1t_d4t_i2g_q3e_m1r(character varying,numeric)"
+"u0888.p1c_c4e_m5f_s1g(numeric,character varying,character varying,character varying)"
+"u0889.u4e_t2p_a8n_r2s(integer,integer,integer,integer,integer,integer,integer,integer,timestamp without time zone,integer,integer,integer)"
+"u0892.m1f_c2t_f3s_p2l(text,text)"
+"u0891.p1c_c4e_n1w_b3h(character varying,character varying,character varying,character varying,character varying,character varying)"
+"u0893.sp_t2p_a7g_i4t(character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying,numeric,character varying,character varying,character varying,character varying,character varying,numeric,character varying,character varying,character varying,character varying,character varying,numeric,numeric,character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying,numeric,character varying)"
+u0895_c4a.ws_l2k_m5r_pr()
+"u0896.a1t_g3p_i2g_q3e_m1r(character varying,numeric,character varying)"
+"u0898.u4e_m5s_t2p_m1g_m4r(numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric)"
+"u0899.u4e_t2p_m1g_p5e(numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric)"
+u0900_c4a.p1c_t2t_a5s_d1y()
+"u0903_c4a.p1c_u50_c3a_m1t_p1r_u1d(character varying,character varying)"
+"u0906.i7h_2(numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric)"
+"u0907.i7f(numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric)"
+"u0909.sp_g12s_v2(text,text,text,text,text,text)"
+"u0908.a1t_q3e_m1r(character varying,numeric,character varying)"
+u0910_m1r_m1h.p1c_p4t_c3d_m3h(numeric)
+"u0913.p1c_r4t_c3d_b3h(numeric,text,text,text,text)"
+"u0918_m1r_m1h.sp_wf_g1t_c4x_m4r(numeric,character varying)"
+u0916.p1c_a1t_b3h_e5t_n1w(character varying)
+"u0920.u4e_t2p_r2d_t3e(numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric,numeric)"
+"u0918_m1r_m1h.sp_wf_c4e_m4r(numeric,character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying)"
+"u0922.sp_t2p_a7g_i4t(text,text,text,text,text,text,text,text,numeric,text,text,text,text,text,text,text,text,text,text,text,text,text,text,text,text,text,text,text,text)"
+"u0925.p1c_i3t_b3h_c8s(numeric,character varying,character varying,refcursor)"
+"u0924_p7r_3.p1c_h2t_lc_u4e(numeric,numeric,character varying,character varying,timestamp without time zone,timestamp without time zone,timestamp without time zone,character varying,character varying,numeric,numeric,numeric,character varying,character varying,character varying,character varying,character varying,character varying,timestamp without time zone)"
+u0930_c4a.p1c_m1t_s5s_s2c()
+"u0929.p1c_f2c_p3s_c6l(character varying,character varying,integer)"
+u0937.p1c_u64_r3h_d1c_m4l()
+"u0940.p2t_s4h_p2c(character varying,character varying,character varying,character varying,character varying)"
+"u0947.g1n_pm_o4t_d5y(numeric,character varying,character varying,refcursor)"
+"u0947.g1n_pm_m3h_d5y(numeric,character varying,character varying,refcursor)"
+"u0949_l1m.l1m_p8n_ml_v1(character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying)"
+u0952_c4a.p1c_u64_r3h_d1c_p4l()
+u0961_c4a.p1c_v2l_u4e()
+u0962_p7h.m4r_pm_g7s()
+"u0962_p7h.p1c_m4r_pm_g7s(text,text,text,text)"
+u0962.p1c_g1t_m4r_b3h_n4r()
+"u0962.p1c_a1d_m4r_b3h(character varying,character varying,character varying,character varying)"
+"u0962.p1c_a1d_m4r_b3h(text,text,integer,text,text,text)"
+"u0964.b2t_a1l_q3e_m5r_pr(integer,integer)"
+"u0962.p1c_g1t_m4r_b3h_o6d(text,text,text,text)"
+u0968.d1f_a5e_w4y_pr()
+"u0967.p1c_m4r_g7s(character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying,refcursor)"
+u0967.p1c_m4r_g7s()
+"u0967.sp_u4e_b3h_s4s(integer,character varying,character varying)"
+u0969.sp_b3h_e4t_t3k(character varying)
+u0969.sp_u4e_e4t_s4s()
+"u0972.i1s_u1d_a1p_m1h(text,bigint,text,bigint,text,text,text,text)"
+u0974.p1c_d4e_b3h(character varying)
+u0974.p1c_a1t_ip_b3h_q3e_m5r()
+"u0974.insert_a1t_i3t_t1l_g5d_p3s(character varying,character varying,character varying,character varying,character varying,character varying)"
+"u0976_m1r_m1h.p1c_a1l_pm_m1r_l2t(integer,character varying,character varying,refcursor)"
+"u0976_m1r_m1h.p1c_a1l_pm_s5y_g1t(integer,character varying,character varying,refcursor)"
+u0981.p1c_d4e_f4d_b3h_d2s(text)
+u0981.p1c_g1t_g3e_a6d_d2a(text)
+u0977.cf_r4t_p8c_r2d_pr()
+u0981.p1c_g1t_g3e_i8d_d2a(text)
+u0981.p1c_g1t_g3e_u6d_p3s(text)
+"u0987.sp_g1t_na_d5s(integer,text,text,refcursor)"
+u1011.p1b_m1r_b3d_p5e()
+"u0989_l1m.l2p_m3h_bp_o2y_v3(character varying,character varying,character varying,character varying,character varying,character varying)"
+u0990.p1c_u4e_i3t()
+"u0992.p2t_q3e_m5r_pr(numeric,numeric,character varying)"
+u0996.p1c_a1l_b4s()
+"u0996.p1c_a1d_u4e_b4s(text,text,text,text)"
+u0996.p1c_a1l_m1r()
+"u0996.p1c_m2g_m7s(character varying,character varying,character varying,character varying,character varying,character varying,character varying)"
+"u0998.p1c_b3c_pm_s4h(character varying,numeric,character varying,character varying,refcursor)"
+u1006_e2f.p1c_u2h_a1l_m1h(refcursor)
+"u1006_e2f.p1c_u2h_g1t_m1h(text,text,text,text,refcursor)"
+"u1007.c2l_h2h_a6s_pr(numeric,numeric,text)"
+"u1009.sp_p3s_v9s(numeric,character varying,character varying)"
+u1009.sp_p3s_v9s()
+"u1009.sp_i5d_b3h(text,text,integer,text,refcursor)"
+u1011.p1c_a1l_b4s()
+"u1011.p1c_a1d_u4e_b4s(character varying,character varying,character varying,character varying)"
+u1011.p1c_a1l_m1r()
+"u1011.p1c_m2g_m7s(character varying,character varying,character varying,character varying,character varying,character varying,character varying)"
+"u1015_l1m.l2p_m3h_r5r_v2(character varying,character varying,character varying,character varying,character varying,character varying,character varying)"
+u1019_c4a.p1c_144_r6c_m4t_l1l()
+"u1020_l1m.l1m_s2t_c4g_f2e_l2d(character varying,character varying)"
+u1020.l1m_s2t_c4g_f2e_l2d()
+"u1023.sp_m4r_i5d_b3h(numeric,character varying)"
+"u1023.sp_v3d_b3h(numeric,character varying)"
+"u1025.sp_wf_p5e_s4s(numeric,character varying,character varying)"
+"u1025.sp_wf_p5e_c3t_n1w(numeric,character varying)"
+"u1030.p1c_g1n_pm_o5e_e4t(numeric,text,text,text,text)"
+u1030.p1c_f2e_e4t_g8s(numeric)
+"u1033.sp_g1t_m9s_on_m5e(character varying,refcursor)"
+u1033.sp_g1t_ec_f2d_t2e(character varying)
+"u1039.p1c_a1t_o5e_q3e(text,text)"
+u1038.sp_g1t_a1l_d1c_d5s()
+u1039.p1c_a1t_g3e_e9t(character varying)
+u1038.sp_g1t_a1l_m1r_d5s(character varying)
+u1038.sp_g1t_a1l_p5t_d5s(character varying)
+u1038.sp_o6e_m7s()
+"u1038.p1c_e4t_m5g_d2s(character varying,character varying)"
+"u1045_l1m.l1m_p8n_v28(character varying,character varying,character varying,character varying,character varying,character varying,character varying)"
+"u1044.ws_g1t_db_p93(integer,integer,integer,text,date,date,integer,text,integer,integer)"
+"u1047.sp_wf_w5t_a1l(numeric,character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying)"
+"u1047.sp_wf_g1t_u4e(character varying,character varying)"
+"u1047.sp_wf_g1t_c4n(numeric,character varying,character varying,character varying)"
+"u1047.sp_wf_u4e_f6e(numeric,character varying,character varying)"
+"u1047.sp_wf_u4e_s4s(numeric,character varying,character varying,character varying,character varying)"
+"u1052.g1n_pm_m3h_p2t(character varying,numeric,character varying)"
+"u1044.ws_g1t_p3d_e1t_a2s(numeric,numeric,character varying,integer,integer)"
+"u1049.a1t_q3e_m1r(character varying,numeric,character varying)"
+u1050.sp_g1t_m5e_m4r(refcursor)
+"u1050.sp_i4t_b3h_t5g_d2s(integer,integer,text,text)"
+"u1050.sp_u4e_b3h_t5g_d2s(integer,text,text)"
+u1050.sp_d4e_m4r_t6g_d2s(character varying)
+"u1050.sp_u4e_c8l_d2s(character varying,character varying)"
+"u1050.sp_i4t_p2d_s4s_d2s(character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying)"
+"u1050.sp_t6e_s5g_t3e(character varying,integer)"
+u1050.sp_d4e_l1m_m6t(text)
+u1050.sp_u4e_m1l_c1g_a4e()
+"u1054_l1m.l1m_m1r_o6e_v7(character varying,character varying)"
+"u1055.g1n_pm_m3h_p2t_t2t(integer,integer,integer,text,record)"
+u1053.ws_a1t_s4e_p2t_e1t()
+"u1053.ws_a1t_s4e_e4d_pr(text,text,text,text,text,text,text,text,text,text,text,text,text,text,anyelement)"
+"u1053.ws_g1t_p3d_a2s(refcursor,numeric,numeric,text,integer,integer)"
+u1057.d1f_n6c_p7e_a5e()
+"u1059.p1c_g1t_c2s_e5n_e4t(numeric,character varying,refcursor)"
+u1059.p1c_g1t_m2s()
+u1059.p1c_g1t_p4t_m1r()
+"u1226.update_order_status(integer,character varying)"
+u1414.generate_report(character varying)
+u1432.mark_order_shipped(integer)
+"u1491.send_email_notification(character varying,character varying,character varying)"
+"u1623.update_inventory(integer,numeric)"
+"u1730.add_employee(integer,character varying,character varying,numeric)"

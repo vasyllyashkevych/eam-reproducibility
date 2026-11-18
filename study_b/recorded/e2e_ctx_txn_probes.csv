@@ -1,0 +1,13 @@
+probe,description,allowed,created,sqlstate,message,pg_version
+function,COMMIT у функції,False,True,2D000,invalid transaction termination,17.11 (Homebrew)
+procedure_call,"COMMIT у процедурі, CALL поза явною транзакцією",True,True,,,17.11 (Homebrew)
+procedure_in_txn,"COMMIT у процедурі, CALL усередині BEGIN … COMMIT",False,True,2D000,invalid transaction termination,17.11 (Homebrew)
+security_definer,COMMIT у процедурі з SECURITY DEFINER,False,True,2D000,invalid transaction termination,17.11 (Homebrew)
+set_clause,COMMIT у процедурі з параметром SET,False,True,2D000,invalid transaction termination,17.11 (Homebrew)
+nested_call,CALL процедури з COMMIT з іншої процедури (CALL поза транзакцією),True,True,,,17.11 (Homebrew)
+called_from_function,CALL процедури з COMMIT із функції,False,True,2D000,invalid transaction termination,17.11 (Homebrew)
+exception_block,COMMIT у захищеній частині блоку з EXCEPTION,False,True,2D000,cannot commit while a subtransaction is active,17.11 (Homebrew)
+exception_handler,ROLLBACK в обробнику EXCEPTION,True,True,,,17.11 (Homebrew)
+trigger,COMMIT у тригерній функції,False,True,2D000,invalid transaction termination,17.11 (Homebrew)
+do_block,COMMIT в анонімному блоці DO поза явною транзакцією,True,True,,,17.11 (Homebrew)
+savepoint,ROLLBACK TO SAVEPOINT у PL/pgSQL,False,False,42601,"syntax error at or near ""TO""",17.11 (Homebrew)

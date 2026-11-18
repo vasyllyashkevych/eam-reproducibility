@@ -1,0 +1,56 @@
+{
+ "units": 1802,
+ "objects_ora": 2678,
+ "objects_pg": 2910,
+ "match": {
+  "same": 1509,
+  "new": 830,
+  "dissolved": 390,
+  "unpacked": 326,
+  "lost": 208,
+  "kind_changed": 183,
+  "unpacked_kind_changed": 62
+ },
+ "kinds_ora": {
+  "procedure": 1181,
+  "anonymous": 484,
+  "package_body": 276,
+  "table": 192,
+  "function": 134,
+  "package": 114,
+  "index": 66,
+  "view": 62,
+  "trigger": 59,
+  "synonym": 38,
+  "type": 34,
+  "sequence": 19,
+  "mview": 19
+ },
+ "kinds_pg": {
+  "procedure": 927,
+  "function": 630,
+  "anonymous": 540,
+  "table": 260,
+  "schema": 255,
+  "index": 97,
+  "view": 90,
+  "trigger": 35,
+  "mview": 30,
+  "type": 27,
+  "sequence": 19
+ },
+ "priv_change": 854,
+ "routines_ora": 1149,
+ "dyn_units_ora": 257,
+ "dyn_unsafe_ora": 229,
+ "dyn_ora": 2544,
+ "dyn_unsafe_pg": 107,
+ "dyn_pg": 2968,
+ "grants_ora": 98,
+ "grants_pg": 82,
+ "difficulty_units": {
+  "direct_only": 249,
+  "rewrite": 578,
+  "noeq": 339
+ }
+}

@@ -1,0 +1,48 @@
+== run_all.sh started 2026-11-18T15:54:41Z
+Python 3.14.0
+numpy 2.5.1 pandas 2.3.3 scipy 1.18.0 matplotlib 3.11.0
+== SHA-256 check of shipped inputs
+MANIFEST OK
+== Study A
+
+real	0m8.707s
+user	0m8.267s
+sys	0m0.164s
+== joint ablation
+
+real	0m2.128s
+user	0m1.968s
+sys	0m0.122s
+== Study C (offline)
+/private/tmp/claude-501/-Users-vasyl-lyashkevych-Documents-dr/a0943197-55ff-48ca-b0ef-d9ebb6cfaf56/scratchpad/clean_all/code/security_cvss.py:166: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  t = d + pd.Timedelta(days=h)
+/private/tmp/claude-501/-Users-vasyl-lyashkevych-Documents-dr/a0943197-55ff-48ca-b0ef-d9ebb6cfaf56/scratchpad/clean_all/code/security_cvss.py:166: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  t = d + pd.Timedelta(days=h)
+/private/tmp/claude-501/-Users-vasyl-lyashkevych-Documents-dr/a0943197-55ff-48ca-b0ef-d9ebb6cfaf56/scratchpad/clean_all/code/security_cvss.py:166: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  t = d + pd.Timedelta(days=h)
+/private/tmp/claude-501/-Users-vasyl-lyashkevych-Documents-dr/a0943197-55ff-48ca-b0ef-d9ebb6cfaf56/scratchpad/clean_all/code/security_cvss.py:166: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  t = d + pd.Timedelta(days=h)
+/private/tmp/claude-501/-Users-vasyl-lyashkevych-Documents-dr/a0943197-55ff-48ca-b0ef-d9ebb6cfaf56/scratchpad/clean_all/code/security_cvss.py:166: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  t = d + pd.Timedelta(days=h)
+
+real	0m1.053s
+user	0m0.848s
+sys	0m0.123s
+== Study B aggregates
+
+real	0m0.885s
+user	0m0.727s
+sys	0m0.106s
+== failure prediction (needs restricted unit table)
+SKIPPED: restricted Study B unit table not present (expected for reviewers)
+== figures
+['fig1_monitoring_taxonomy.png', 'fig2_two_stage_procedure.png', 'fig3_reference_architecture.png', 'fig4_study_a_macro_f1.png', 'fig5_study_b_drift_profile.png', 'fig6_study_c_pinned_releases.png']
+fig1_monitoring_taxonomy.svg -> fig1_monitoring_taxonomy.png
+fig2_two_stage_procedure.svg -> fig2_two_stage_procedure.png
+fig3_reference_architecture.svg -> fig3_reference_architecture.png
+== compare with the manuscript
+checks 136  PASS 136  FAIL 0
+== tests
+.............                                                            [100%]
+13 passed in 0.81s
+== run_all.sh finished 2026-11-18T15:55:01Z

@@ -1,0 +1,10 @@
+failure_class,n_units,top_dim,expected,rank_of_expected,delta_expected,delta_top
+type_coercion,31,d_configuration,d_configuration;d_semantic,1,0.14374677925347346,0.14374677925347346
+dynamic_sql_safety,14,d_architectural,d_security,7,-0.029171096381086392,0.203159751924722
+txn_semantics,12,d_architectural,d_contextual,5,0.14065658227334876,0.6150645138294839
+error_handling,10,d_policy,d_semantic,2,0.1500798403193614,0.16167664670658688
+privilege_context,9,d_semantic,d_policy;d_security,7,-0.1521869693969593,0.07304280328232426
+null_semantics,6,d_semantic,d_semantic;d_contextual,1,0.3100798403193613,0.3100798403193613
+remote_dependency,5,d_topological,d_security;d_topological,1,0.3989096700245486,0.3989096700245486
+temporal_semantics,3,d_architectural,d_semantic;d_contextual,4,0.15452428476380575,0.7817311804961505
+package_state,2,d_semantic,d_architectural,7,-0.21826881950384944,0.3100798403193613

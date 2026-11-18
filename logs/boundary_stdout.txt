@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "/private/tmp/claude-501/-Users-vasyl-lyashkevych-Documents-dr/a0943197-55ff-48ca-b0ef-d9ebb6cfaf56/scratchpad/clean_all/code/boundary_real.py", line 108, in <module>
+    main()
+    ~~~~^^
+  File "/private/tmp/claude-501/-Users-vasyl-lyashkevych-Documents-dr/a0943197-55ff-48ca-b0ef-d9ebb6cfaf56/scratchpad/clean_all/code/boundary_real.py", line 45, in main
+    U = pd.read_csv(E2E / "e2e_units_9d.csv", keep_default_na=False)
+  File "/Users/vasyl_lyashkevych/Library/Python/3.14/lib/python/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/Users/vasyl_lyashkevych/Library/Python/3.14/lib/python/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Users/vasyl_lyashkevych/Library/Python/3.14/lib/python/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/vasyl_lyashkevych/Library/Python/3.14/lib/python/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/vasyl_lyashkevych/Library/Python/3.14/lib/python/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: '/private/tmp/claude-501/-Users-vasyl-lyashkevych-Documents-dr/a0943197-55ff-48ca-b0ef-d9ebb6cfaf56/scratchpad/clean_all/data/study_b_restricted/e2e_units_9d.csv'

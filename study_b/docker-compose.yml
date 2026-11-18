@@ -1,0 +1,14 @@
+# Alternative to a local PostgreSQL 17 installation. The scripts connect as user "postgres" to localhost:55432.
+# The csvlog directory is mounted to ./pg/cluster_log so that testbed_run.py can read server errors (OPS_PGLOG).
+services:
+  pg17:
+    image: postgres:17
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: trust
+    ports: ["127.0.0.1:55432:5432"]
+    volumes: ["./pg/cluster_log:/var/lib/postgresql/data/log"]
+    command: >
+      postgres -c shared_preload_libraries=pg_stat_statements,auto_explain -c pg_stat_statements.track=all
+      -c track_functions=all -c track_io_timing=on -c logging_collector=on -c log_destination=csvlog
+      -c log_directory=log -c log_min_messages=warning -c log_min_error_statement=error
+      -c auto_explain.log_min_duration=50ms -c timezone=Europe/Kiev
