@@ -99,7 +99,7 @@ def analyze(code_dir: Path, out_dir: Path, fig_dir: Path):
     ax.grid(alpha=.55)
     ax.set_title('Nine-dimension profile', fontsize=22, pad=26)
     for ext in ('png',):
-        fig.savefig(fig_dir/f'fig5a_study_a_lofo_radar.{ext}', dpi=250, bbox_inches='tight')
+        fig.savefig(fig_dir/f'fig5a_study_a_lofo_radar.{ext}', dpi=600, bbox_inches='tight')
     plt.close(fig)
 
     order = df.sort_values('drop_macro_f1', ascending=False).reset_index(drop=True)   # largest decrease at the top
@@ -120,7 +120,7 @@ def analyze(code_dir: Path, out_dir: Path, fig_dir: Path):
     ax.grid(axis='x', alpha=.25)
     ax.set_axisbelow(True)
     for ext in ('png',):
-        fig.savefig(fig_dir/f'fig5b_study_a_lofo_paired_ci.{ext}', dpi=250, bbox_inches='tight')
+        fig.savefig(fig_dir/f'fig5b_study_a_lofo_paired_ci.{ext}', dpi=600, bbox_inches='tight')
     plt.close(fig)
     print(df[['dimension','without_macro_f1','drop_macro_f1','ci95_low','ci95_high']].to_string(index=False,float_format=lambda v:f'{v:.4f}'))
     print(f'Original C0 macro-F1 = {baseline:.6f}; tables saved to {out_dir}, figures to {fig_dir}')
