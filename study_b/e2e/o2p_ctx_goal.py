@@ -7,7 +7,7 @@
 PostgreSQL 17 (стенд ops/), значення Oracle — за документованою поведінкою Oracle Database 19c.
 
 Цільовий дрейф: модель цілей одиниці — специфікаційні атрибути перевірки з лабораторного проєкту
-daryna_tukalo/oracle-spec-project (pipeline/profiles.py: профілі table/view/routine/trigger/orchestrator,
+oracle-spec-project (pipeline/profiles.py: профілі table/view/routine/trigger/orchestrator,
 умовна ціль безпеки динамічного SQL). Профіль обчислюється окремо для коду Oracle і PostgreSQL;
 D_goal = (додані + вилучені + цілі зі зміненим критерієм досягнення) / |G_O ∪ G_P|.
 

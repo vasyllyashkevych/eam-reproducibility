@@ -12,7 +12,7 @@ All artifacts needed to reproduce the paper are included. Nothing is withheld.
 | Study B testbed code (deployment, stub inference, instrumented runs, telemetry collection, detectors) | `study_b/ops/src/`, `study_b/pg/`, `study_b/docker-compose.yml` | Public |
 | Measurements recorded on the PostgreSQL 17.11 testbed (incl. telemetry of 10 runs, 123 MB) | `study_b/recorded/` | Public |
 | Author's original Study B outputs (for comparison) | `study_b/reference/` | Public |
-| Object-profile classifier from the laboratory project *oracle-spec-project* | `study_b/third_party/` | Redistributed with the author's (D. Tukalo) permission |
+| Object-profile classifier from the laboratory project *oracle-spec-project* | `study_b/third_party/` | Redistributed with the original author's permission |
 | Per-run Study B metrics and aggregates (quick path) | `data/study_b_public/` | Public |
 | Figures 1–5 | `figures/`, `code/figures.py`, `code/diagrams.py` | Public |
 | Tests, expected values, traceability | `tests/`, `expected/`, `RESULTS_TRACEABILITY.csv` | Public |
