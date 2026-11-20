@@ -13,8 +13,9 @@ This file tells an assistant how to help a reviewer **validate the results of th
 3. **Do not change the experiment code, seeds or inputs** unless the reviewer explicitly asks for a modified experiment.
    If you do, say clearly that the result is no longer a reproduction.
 4. **A FAIL is a finding, not a bug to hide.** Report the check id, expected value, obtained value, tolerance and source file.
-5. **Say what you did not verify.** The manuscript is `PAPER021433.pdf` in the repository root. Table, figure and equation numbers in
-   the docs refer to it. Compare numbers with the PDF only where you can read them there, and state which page you used.
+5. **Say what you did not verify.** The manuscript text is not in this repository (table, figure and equation numbers in the docs refer
+   to the manuscript). You can compare the code and the stored expected values; compare with the manuscript only if the
+   reviewer gives it to you, and name the version you used.
 6. Do not commit, push or delete files unless asked. Do not send repository content to external services.
 
 ## What the package contains
@@ -27,7 +28,6 @@ This file tells an assistant how to help a reviewer **validate the results of th
 | `docs/expected/expected_results.json` | the values printed in the paper, with tolerances and the source of each |
 | `docs/RESULTS_TRACEABILITY.csv` | 150 claims → manuscript location, output file, script, command (145 are checked by `check_expected.py`, 5 are visual) |
 | `tests/` | unit tests |
-| `PAPER021433.pdf` | the manuscript |
 | `README.md`, `README_REPRODUCE.md`, `TUTORIAL.md`, `DATA_DICTIONARY.md` | human documentation; read these before answering questions about methods or files |
 
 ## Standard validation procedure

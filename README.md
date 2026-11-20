@@ -33,7 +33,6 @@ bash docs/study_b/run_study_b_offline.sh     # Study B from the migration corpus
 
 | File or folder | Content |
 |---|---|
-| `PAPER021433.pdf` | the manuscript this package belongs to (table, figure and equation numbers in the docs refer to it) |
 | `README_REPRODUCE.md` | environment, commands, data, tolerances, known limitations, troubleshooting |
 | `TUTORIAL.md` | every experiment step by step, with the value to expect after each step |
 | `docs/RESULTS_TRACEABILITY.csv` | each of the 150 numbers/claims of the paper → output file, producing script, command (145 are checked automatically, 5 are visual) |
