@@ -1,0 +1,13 @@
+{
+ "units_total": 1802,
+ "units_by_source": {
+  "prod_db": 1060,
+  "prev_test_set": 588,
+  "parsed_live_sql": 99,
+  "prev_team_view": 44,
+  "prev_team_triggers": 11
+ },
+ "units_deployed_without_error": 795,
+ "routines_executed_with_instrumentation": 290,
+ "note": "Counts from the PostgreSQL 17.11 testbed run of 18 November 2026 (Apple M2, 8 cores, 16 GB RAM, macOS 27.2.1); computed from study_b/recorded/ops_deploy.csv and ops_txn_validation.csv."
+}

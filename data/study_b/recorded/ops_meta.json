@@ -1,0 +1,192 @@
+[
+ {
+  "seed": 1,
+  "testbed_objects": 1334,
+  "op_objects": 1208,
+  "units": 771,
+  "defects": 200,
+  "applied": 196,
+  "events": 139,
+  "assert_probes": 970,
+  "fam_ms_step": {
+   "fn": 1.4496837799379136,
+   "pgss": 4.705183369987935,
+   "tab": 2.2357657899556216,
+   "cat": 14.496573280030134,
+   "db": 0.10244085997328511,
+   "errors": 2.8077404499526892
+  },
+  "workload_ms_step": 800.9589420999328
+ },
+ {
+  "seed": 2,
+  "testbed_objects": 1334,
+  "op_objects": 1208,
+  "units": 771,
+  "defects": 218,
+  "applied": 211,
+  "events": 141,
+  "assert_probes": 1238,
+  "fam_ms_step": {
+   "fn": 1.1652733300434193,
+   "pgss": 4.063397069949133,
+   "tab": 1.9719471099051589,
+   "cat": 13.227449570022145,
+   "db": 0.09587078991899034,
+   "errors": 3.3492925201062462
+  },
+  "workload_ms_step": 581.6468737001014
+ },
+ {
+  "seed": 3,
+  "testbed_objects": 1334,
+  "op_objects": 1208,
+  "units": 771,
+  "defects": 230,
+  "applied": 227,
+  "events": 181,
+  "assert_probes": 1096,
+  "fam_ms_step": {
+   "fn": 1.3650841100388789,
+   "pgss": 5.071234129882214,
+   "tab": 2.3410558300201956,
+   "cat": 14.395839589942625,
+   "db": 0.10398336988146184,
+   "errors": 2.9485508200741606
+  },
+  "workload_ms_step": 215.15766452996104
+ },
+ {
+  "seed": 4,
+  "testbed_objects": 1334,
+  "op_objects": 1208,
+  "units": 771,
+  "defects": 209,
+  "applied": 206,
+  "events": 144,
+  "assert_probes": 1195,
+  "fam_ms_step": {
+   "fn": 1.3043029100481363,
+   "pgss": 7.156647560004785,
+   "tab": 2.4860762999196595,
+   "cat": 14.311562869988848,
+   "db": 0.1087121200907859,
+   "errors": 3.2215120899309113
+  },
+  "workload_ms_step": 260.8556574900467
+ },
+ {
+  "seed": 5,
+  "testbed_objects": 1334,
+  "op_objects": 1208,
+  "units": 771,
+  "defects": 203,
+  "applied": 199,
+  "events": 140,
+  "assert_probes": 1215,
+  "fam_ms_step": {
+   "fn": 1.0532371401131968,
+   "pgss": 5.530654189951747,
+   "tab": 1.8441883700688777,
+   "cat": 13.013829180054017,
+   "db": 0.07746503002636018,
+   "errors": 3.158056230022339
+  },
+  "workload_ms_step": 331.9256795899855
+ },
+ {
+  "seed": 6,
+  "testbed_objects": 1334,
+  "op_objects": 1208,
+  "units": 771,
+  "defects": 216,
+  "applied": 213,
+  "events": 161,
+  "assert_probes": 1263,
+  "fam_ms_step": {
+   "fn": 1.0713475799639127,
+   "pgss": 5.523969170044438,
+   "tab": 1.91795374998037,
+   "cat": 12.894027850052225,
+   "db": 0.08301204019517172,
+   "errors": 3.39272881996294
+  },
+  "workload_ms_step": 279.8560679500224
+ },
+ {
+  "seed": 7,
+  "testbed_objects": 1334,
+  "op_objects": 1208,
+  "units": 771,
+  "defects": 204,
+  "applied": 201,
+  "events": 138,
+  "assert_probes": 1174,
+  "fam_ms_step": {
+   "fn": 1.0754992099828087,
+   "pgss": 3.931704639835516,
+   "tab": 1.8705353899531474,
+   "cat": 12.947396630042931,
+   "db": 0.0781012601146358,
+   "errors": 3.3041862699974445
+  },
+  "workload_ms_step": 919.0800766599932
+ },
+ {
+  "seed": 8,
+  "testbed_objects": 1334,
+  "op_objects": 1208,
+  "units": 771,
+  "defects": 204,
+  "applied": 196,
+  "events": 133,
+  "assert_probes": 1379,
+  "fam_ms_step": {
+   "fn": 1.199693769995065,
+   "pgss": 6.712235010072618,
+   "tab": 2.1108516999265703,
+   "cat": 14.20670755984247,
+   "db": 0.08872585007338785,
+   "errors": 4.141041720049543
+  },
+  "workload_ms_step": 142.0139703800669
+ },
+ {
+  "seed": 9,
+  "testbed_objects": 1334,
+  "op_objects": 1208,
+  "units": 771,
+  "defects": 201,
+  "applied": 199,
+  "events": 130,
+  "assert_probes": 1140,
+  "fam_ms_step": {
+   "fn": 1.1395483099659032,
+   "pgss": 3.7419082599444664,
+   "tab": 2.2101545399164024,
+   "cat": 13.488662039981136,
+   "db": 0.07935459996588179,
+   "errors": 4.013599980007712
+  },
+  "workload_ms_step": 446.191547139897
+ },
+ {
+  "seed": 10,
+  "testbed_objects": 1334,
+  "op_objects": 1208,
+  "units": 771,
+  "defects": 197,
+  "applied": 195,
+  "events": 135,
+  "assert_probes": 1206,
+  "fam_ms_step": {
+   "fn": 1.5333133299645851,
+   "pgss": 6.352865410062805,
+   "tab": 2.3419187600484292,
+   "cat": 14.736866659932275,
+   "db": 0.30448540002907976,
+   "errors": 3.4721566600637743
+  },
+  "workload_ms_step": 1384.3519908700366
+ }
+]

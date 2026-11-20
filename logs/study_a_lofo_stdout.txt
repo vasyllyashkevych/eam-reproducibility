@@ -1,0 +1,11 @@
+    dimension  without_macro_f1  drop_macro_f1  ci95_low  ci95_high
+configuration            0.8533         0.1150    0.1009     0.1288
+     topology            0.9618         0.0065   -0.0013     0.0148
+         role            0.9495         0.0188    0.0128     0.0250
+       policy            0.9580         0.0103    0.0041     0.0168
+ architecture            0.9100         0.0583    0.0462     0.0703
+      context            0.9267         0.0416    0.0346     0.0484
+     semantic            0.9679         0.0004   -0.0021     0.0028
+         goal            0.9534         0.0150    0.0087     0.0211
+     security            0.8978         0.0705    0.0575     0.0845
+Original C0 macro-F1 = 0.968309; tables saved to <package>/docs/results/study_a_lofo, figures to <package>/docs/figures

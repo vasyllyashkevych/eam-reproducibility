@@ -1,0 +1,13 @@
+probe,description,allowed,created,sqlstate,message,pg_version
+function,COMMIT in a function,False,True,2D000,invalid transaction termination,17.11 (Homebrew)
+procedure_call,"COMMIT in a procedure, CALL outside an explicit transaction",True,True,,,17.11 (Homebrew)
+procedure_in_txn,"COMMIT in a procedure, CALL inside BEGIN ... COMMIT",False,True,2D000,invalid transaction termination,17.11 (Homebrew)
+security_definer,COMMIT in a procedure with SECURITY DEFINER,False,True,2D000,invalid transaction termination,17.11 (Homebrew)
+set_clause,COMMIT in a procedure with a SET clause,False,True,2D000,invalid transaction termination,17.11 (Homebrew)
+nested_call,CALL of a procedure with COMMIT from another procedure (CALL outside a transaction),True,True,,,17.11 (Homebrew)
+called_from_function,CALL of a procedure with COMMIT from a function,False,True,2D000,invalid transaction termination,17.11 (Homebrew)
+exception_block,COMMIT in the protected part of a block with EXCEPTION,False,True,2D000,cannot commit while a subtransaction is active,17.11 (Homebrew)
+exception_handler,ROLLBACK in an EXCEPTION handler,True,True,,,17.11 (Homebrew)
+trigger,COMMIT in a trigger function,False,True,2D000,invalid transaction termination,17.11 (Homebrew)
+do_block,COMMIT in an anonymous DO block outside an explicit transaction,True,True,,,17.11 (Homebrew)
+savepoint,ROLLBACK TO SAVEPOINT in PL/pgSQL,False,False,42601,"syntax error at or near ""TO""",17.11 (Homebrew)

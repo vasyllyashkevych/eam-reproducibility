@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the article."
+title: "Reproducibility package for: Evolution-Aware Monitoring for Evolving Information Systems: Multidimensional Drift Assessment with a Version-Dependent Reference Model"
+version: "1.0.0"
+date-released: "2026-11-18"
+repository-code: "https://github.com/vasyllyashkevych/eam-reproducibility"
+authors:
+  - family-names: Lyashkevych
+    given-names: Vasyl
+    affiliation: "Ivan Franko National University of Lviv"
+    orcid: "https://orcid.org/0000-0003-2810-6061"
+preferred-citation:
+  type: article
+  title: "Evolution-Aware Monitoring for Evolving Information Systems: Multidimensional Drift Assessment with a Version-Dependent Reference Model"
+  authors:
+    - family-names: Lyashkevych
+      given-names: Vasyl
+  journal: "International Journal of Information Technology and Computer Science (IJITCS)"
+  notes: "Manuscript PAPER021433, under review; volume, issue and DOI not yet assigned."

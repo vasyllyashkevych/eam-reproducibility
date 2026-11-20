@@ -1,0 +1,49 @@
+== run_all.sh started 2026-11-20T18:42:54Z
+Python 3.14.0
+numpy 2.5.1 pandas 2.3.3 scipy 1.18.0 matplotlib 3.11.0
+== SHA-256 check of shipped inputs
+MANIFEST OK
+== Study A
+
+real	0m8.654s
+user	0m8.195s
+sys	0m0.172s
+== Study A supplementary leave-one-dimension-out
+
+real	0m1.886s
+user	0m1.655s
+sys	0m0.164s
+== joint ablation
+
+real	0m2.258s
+user	0m2.011s
+sys	0m0.121s
+== Study C (offline)
+<package>/code/security_cvss.py:166: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  t = d + pd.Timedelta(days=h)
+<package>/code/security_cvss.py:166: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  t = d + pd.Timedelta(days=h)
+<package>/code/security_cvss.py:166: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  t = d + pd.Timedelta(days=h)
+<package>/code/security_cvss.py:166: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  t = d + pd.Timedelta(days=h)
+<package>/code/security_cvss.py:166: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+  t = d + pd.Timedelta(days=h)
+
+real	0m1.043s
+user	0m0.856s
+sys	0m0.120s
+== Study B aggregates
+
+real	0m0.905s
+user	0m0.747s
+sys	0m0.108s
+== failure prediction, Table 10 (needs the unit tables in docs/study_b/e2e/out from docs/study_b/run_study_b_offline.sh)
+== figures
+['fig1_monitoring_taxonomy.png', 'fig2_two_stage_procedure.png', 'fig3_reference_architecture.png', 'fig4_study_a_macro_f1.png', 'fig5_study_b_drift_profile.png', 'fig5a_study_a_lofo_radar.png', 'fig5b_study_a_lofo_paired_ci.png', 'fig6_study_c_pinned_releases.png']
+== compare with the manuscript
+checks 145  PASS 145  FAIL 0
+== tests
+.............                                                            [100%]
+13 passed in 0.97s
+== run_all.sh finished 2026-11-20T18:43:19Z

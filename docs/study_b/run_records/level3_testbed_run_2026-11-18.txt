@@ -1,0 +1,521 @@
+== structure (11:39:47)
+{
+ "units": 1802,
+ "objects_ora": 2678,
+ "objects_pg": 2910,
+ "match": {
+  "same": 1509,
+  "new": 830,
+  "dissolved": 390,
+  "unpacked": 326,
+  "lost": 208,
+  "kind_changed": 183,
+  "unpacked_kind_changed": 62
+ },
+ "kinds_ora": {
+  "procedure": 1181,
+  "anonymous": 484,
+  "package_body": 276,
+  "table": 192,
+  "function": 134,
+  "package": 114,
+  "index": 66,
+  "view": 62,
+  "trigger": 59,
+  "synonym": 38,
+  "type": 34,
+  "sequence": 19,
+  "mview": 19
+ },
+ "kinds_pg": {
+  "procedure": 927,
+  "function": 630,
+  "anonymous": 540,
+  "table": 260,
+  "schema": 255,
+  "index": 97,
+  "view": 90,
+  "trigger": 35,
+  "mview": 30,
+  "type": 27,
+  "sequence": 19
+ },
+ "priv_change": 854,
+ "routines_ora": 1149,
+ "dyn_units_ora": 257,
+ "dyn_unsafe_ora": 229,
+ "dyn_ora": 2544,
+ "dyn_unsafe_pg": 107,
+ "dyn_pg": 2968,
+ "grants_ora": 98,
+ "grants_pg": 82,
+ "difficulty_units": {
+  "direct_only": 249,
+  "rewrite": 578,
+  "noeq": 339
+ }
+}
+       dimension   mean  median    p90  share_nonzero  units_nonzero
+0  configuration  0.458   0.000  1.000          0.497            895
+1    topological  0.177   0.000  0.667          0.351            632
+2           role  0.022   0.000  0.000          0.024             44
+3         policy  0.489   0.000  1.000          0.491            884
+4  architectural  0.341   0.000  1.000          0.351            632
+5       semantic  0.347   0.167  1.000          0.558           1005
+6       security  0.502   0.500  1.000          0.536            966
+== context and goal dimensions (live PG17 checks) (11:39:52)
+                assumption    oracle_value        pg_value  violated
+0     empty_string_is_null            true           false      True
+1      concat_ignores_null            true           false      True
+2          date_keeps_time            true           false      True
+3          nls_date_format       DD-MON-RR        ISO, MDY      True
+4     clock_statement_time            true           false      True
+5    upper_identifier_fold            true           false      True
+6         decimal_division            true           false      True
+7           ddl_autocommit            true           false      True
+8        commit_in_routine            true           false      True
+9     no_data_found_raises            true           false      True
+10             binary_sort            true           false      True
+11  read_committed_default  read committed  read committed     False
+12          nulls_last_asc            true            true     False
+13     like_case_sensitive            true            true     False
+14       unique_multi_null            true            true     False
+       dimension  share_pos   mean    p90  share_sig
+0  configuration      0.497  0.458  1.000      0.497
+1    topological      0.351  0.177  0.667      0.333
+2           role      0.024  0.022  0.000      0.024
+3         policy      0.491  0.489  1.000      0.491
+4  architectural      0.351  0.341  1.000      0.349
+5       semantic      0.558  0.347  1.000      0.542
+6       security      0.536  0.502  1.000      0.530
+7     contextual      0.620  0.516  1.000      0.620
+8           goal      0.534  0.141  0.583      0.362
+profile change: 0.127
+                   1074
+null_behavior       406
+result_parity       350
+critical_calls      242
+package_mapping     140
+exception_paths       9
+Name: count, dtype: int64
+                 d_contextual  d_goal
+d_configuration          0.24    0.17
+d_topological            0.01   -0.03
+d_role                  -0.17   -0.14
+d_policy                 0.24    0.26
+d_architectural          0.30    0.61
+d_semantic               0.34    0.22
+d_security               0.28    0.27
+d_contextual             1.00    0.56
+d_goal                   0.56    1.00
+== deploy 1,802 units into template database o2p_tpl (11:39:54)
+definer+COMMIT conflicts: 305
+clean units: 795 of 1802 | seeded rows: 2072
+catalog objects: 1421 {'procedure': 764, 'function': 485, 'table': 115, 'sequence': 36, 'view': 10, 'trigger': 9, 'mview': 2}
+G1 objects matched to deployed: 1447 of 2091
+== infer stub tables from execution feedback (11:40:08)
+stub tables: 460 columns: 1976 rows: 10800
+== baseline executability (11:40:18)
+               mean  size
+kind                     
+function   0.644654   424
+procedure  0.593571   757
+trigger    0.083333     8
+view       0.894737    19
+state
+42883    160
+34000     61
+42P01     56
+0A000     35
+42703     29
+22P02     25
+42809     16
+42804     11
+3F000     11
+42601      9
+2D000      9
+42501      9
+Name: count, dtype: int64
+== instrumented COMMIT/ROLLBACK runs (11:40:36)
+skip u0578_a62.db_s4t_h4r_f4r_v1() 42601
+skip u0585_a62.db_s4t_h4r_f4r_m_v1() 42601
+296 routines
+           calls  ok_plain  ok_protected  caught  uncaught
+kind                                                      
+function      48         0             0       0        25
+procedure    840        72             0      12         0
+== transaction-control refinement (live probes) (11:40:40)
+                   probe  allowed sqlstate                                         message
+0               function    False    2D000                 invalid transaction termination
+1         procedure_call     True                                                         
+2       procedure_in_txn    False    2D000                 invalid transaction termination
+3       security_definer    False    2D000                 invalid transaction termination
+4             set_clause    False    2D000                 invalid transaction termination
+5            nested_call     True                                                         
+6   called_from_function    False    2D000                 invalid transaction termination
+7        exception_block    False    2D000  cannot commit while a subtransaction is active
+8      exception_handler     True                                                         
+9                trigger    False    2D000                 invalid transaction termination
+10              do_block     True                                                         
+11             savepoint    False    42601                    syntax error at or near "TO"
+{'V': 377, 'C': 164, 'U': 27} | with definer rights preserved: {'V': 510, 'C': 31, 'U': 27}
+cls  reason           
+C    do_block              15
+     procedure_call       260
+U    no_pg_counterpart     27
+V    autonomous_tx          3
+     exception_block      323
+     function             120
+     savepoint             15
+     trigger                1
+Only violation: {'C': 27, 'V': 21, 'U': 4}
+Testbed (instrumented execution): COMMIT in the protected part succeeded: 0
+observed         2D000  commit_ok  not_reached
+reason                                        
+exception_block      3          2          135
+function             9          0            4
+procedure_call       0         21          104
+unmatched            0          1           11
+             variant  units_pos  share_pos    mean  share_sig  commit_violated_units  max_rho_7d  rho_goal  units_sig_any9
+0            initial       1118     0.6204  0.5165     0.6204                    568      0.3382    0.5614            1526
+1            refined       1087     0.6032  0.4910     0.6032                    377      0.3283    0.5736            1526
+2      refined_upper       1091     0.6054  0.4948     0.6054                    404      0.3302    0.5726            1526
+3  definer_preserved       1113     0.6176  0.5097     0.6176                    510      0.3345    0.5633            1526
+== execution errors for the failure classes (11:40:41)
+1334 objects; 642 with errors; {'caught': 1280, 'uncaught': 1214}
+{'42P01': 1174, '42883': 554, '42703': 136, '0A000': 105, '42809': 84, '22P02': 77, '42601': 56, '2D000': 46, '42804': 41, '3F000': 33, '22004': 30, '42501': 27, '22001': 21, '22003': 21, '23505': 19, 'P0001': 12, '22007': 9, '57014': 7, '55000': 6, '2F005': 6, '42704': 6, '58P01': 6, '42846': 6, '42602': 3, '22011': 3}
+== independent failure classes (11:41:00)
+                     errors  objects
+prop                                
+excluded               2045      546
+type_coercion           133       42
+exec_errors              84       21
+dynamic_sql_safety       56       17
+txn_semantics            46       14
+error_handling           33       11
+privilege_context        27        9
+null_semantics           27        7
+remote_dependency        18        5
+latency                   7        4
+temporal_semantics        9        3
+package_state             6        2
+refcursor_lifecycle       3        1
+        method  objects_executed  objects_gold  gold_pairs  gold_pairs_in_vocab  hits  recall  recall_lo  recall_hi  recall_in_vocab  size_all  size_gold  confirmed_share  recall_random  d_recall_vs_method   d_lo   d_hi
+0       method              1208           108         111                   67    61   0.550      0.455      0.637            0.910     5.696      6.852            0.082          0.279                 NaN    NaN    NaN
+1      lexical              1208           108         111                   67    47   0.423      0.333      0.518            0.701     2.500      3.306            0.132          0.137              -0.126 -0.191 -0.070
+2   exhaustive              1208           108         111                   67    67   0.604      0.514      0.691            1.000    14.969     14.981            0.041          0.604               0.054  0.018  0.100
+3  source_spec              1208           108         111                   67    39   0.351      0.263      0.443            0.582     2.002      2.694            0.134          0.116              -0.198 -0.277 -0.126
+4           gt              1208           108         111                   67    62   0.559      0.468      0.649            0.925     6.711      7.796            0.074          0.317               0.009 -0.000  0.028
+                     gold  method  lexical  exhaustive  source_spec  gt
+type_coercion          42       0        0           0            0   0
+dynamic_sql_safety     17      17       17          17           13  17
+txn_semantics          14      14       14          14           13  14
+error_handling         11      11       11          11            8  11
+privilege_context       9       5        0           9            0   5
+null_semantics          7       7        0           7            0   7
+remote_dependency       5       5        5           5            5   5
+temporal_semantics      3       2        0           3            0   2
+package_state           2       0        0           0            0   0
+refcursor_lifecycle     1       0        0           1            0   1
+== simulation (Table 7) (11:41:02)
+{'obj_pre': 2150, 'obj_post': 2531, 'slots_pre': 10321, 'slots_gt': 19595, 'slots_method': 17892, 'slots_lexical': 12173, 'localized_units': 1511}
+seed 1 done 14.8 s
+seed 2 done 32.6 s
+seed 3 done 52.1 s
+seed 4 done 72.1 s
+seed 5 done 92.1 s
+seed 6 done 112.7 s
+seed 7 done 130.5 s
+seed 8 done 150.1 s
+seed 9 done 169.3 s
+seed 10 done 186.4 s
+seed 11 done 203.3 s
+seed 12 done 221.2 s
+seed 13 done 238.1 s
+seed 14 done 254.8 s
+seed 15 done 271.6 s
+seed 16 done 288.2 s
+seed 17 done 304.7 s
+seed 18 done 321.1 s
+seed 19 done 337.6 s
+seed 20 done 354.7 s
+seed 21 done 372.1 s
+seed 22 done 393.3 s
+seed 23 done 412.3 s
+seed 24 done 431.6 s
+seed 25 done 451.5 s
+seed 26 done 472.2 s
+seed 27 done 491.5 s
+seed 28 done 509.2 s
+seed 29 done 526.7 s
+seed 30 done 543.8 s
+seed 31 done 560.8 s
+seed 32 done 577.7 s
+seed 33 done 594.7 s
+seed 34 done 612.0 s
+seed 35 done 630.5 s
+seed 36 done 648.0 s
+seed 37 done 665.3 s
+seed 38 done 682.7 s
+seed 39 done 699.8 s
+seed 40 done 717.1 s
+variant                   S0        S1         S2         S3       S3-O
+PCR_mean               0.272     0.353      0.639      0.633      0.618
+PCRw_mean              0.317     0.389      0.681      0.674      0.602
+TPP_mean               0.000     0.186      0.577      0.570      0.555
+MRSR_mean              0.000     0.269      0.711      0.710      0.522
+VR_mean                  NaN     1.000      1.000      1.000      0.999
+P_mean                 0.866     0.661      0.802      0.799      0.715
+R_mean                 0.235     0.377      0.741      0.736      0.522
+F1_mean                0.369     0.479      0.770      0.766      0.603
+MTTD_mean             14.623     4.363      6.770      6.458      5.490
+LA_mean                0.000     0.239      0.639      0.633      0.419
+FAR_mean               0.134     0.339      0.198      0.201      0.285
+ACS_mean               0.541     0.404      0.042      0.047      0.250
+OH_mean                0.000     0.308      1.000      1.000      1.000
+probes_mean            4.000  4244.050  12526.625  12408.050  12120.750
+slots_optimized_mean   0.000     0.000  17892.000  16449.400  10730.400
+evals_mean             0.000     0.000   5808.000   5808.000   5808.000
+t_adapt_mean           0.000     0.002      5.599      5.185      3.386
+== simulation, ten variants (11:53:00)
+{'obj_pre': 2150, 'obj_post': 2531, 'slots_pre': 10321, 'slots_gt': 19595, 'slots_method': 17892, 'slots_lexical': 12173, 'localized_units': 1511}
+seed 1 done 27.0 s
+seed 2 done 54.5 s
+seed 3 done 80.7 s
+seed 4 done 105.8 s
+seed 5 done 130.5 s
+seed 6 done 155.6 s
+seed 7 done 181.2 s
+seed 8 done 207.2 s
+seed 9 done 234.4 s
+seed 10 done 261.6 s
+seed 11 done 290.7 s
+seed 12 done 319.1 s
+seed 13 done 348.4 s
+seed 14 done 376.9 s
+seed 15 done 402.8 s
+seed 16 done 428.5 s
+seed 17 done 458.4 s
+seed 18 done 488.0 s
+seed 19 done 510.5 s
+seed 20 done 530.9 s
+seed 21 done 551.0 s
+seed 22 done 570.9 s
+seed 23 done 590.8 s
+seed 24 done 611.0 s
+seed 25 done 631.1 s
+seed 26 done 651.6 s
+seed 27 done 672.6 s
+seed 28 done 697.9 s
+seed 29 done 721.6 s
+seed 30 done 742.6 s
+seed 31 done 762.6 s
+seed 32 done 782.8 s
+seed 33 done 803.2 s
+seed 34 done 827.3 s
+seed 35 done 849.0 s
+seed 36 done 869.9 s
+seed 37 done 890.0 s
+seed 38 done 911.0 s
+seed 39 done 932.1 s
+seed 40 done 954.0 s
+== testbed: 10 runs x 100 steps, 120 operations per step (about 1.5 h) (12:08:55)
+seed 1: 139 events, 1334 objects, 600 s
+seed 2: 141 events, 1334 objects, 446 s
+seed 3: 181 events, 1334 objects, 125 s
+seed 4: 144 events, 1334 objects, 665 s
+seed 5: 140 events, 1334 objects, 398 s
+seed 6: 161 events, 1334 objects, 364 s
+seed 7: 138 events, 1334 objects, 454 s
+seed 8: 133 events, 1334 objects, 439 s
+seed 9: 130 events, 1334 objects, 560 s
+seed 10: 135 events, 1334 objects, 918 s
+         probes_obj  events      P      R     F1    MTTD     LA    FAR  overhead_ms_step
+variant                                                                                 
+S0              0.0   144.2  1.000  0.056  0.106  32.912  0.000  0.000            17.265
+S1           2378.3   144.2  0.202  0.386  0.264   5.272  0.324  0.798            22.544
+S2           8396.9   144.2  0.186  0.607  0.284   0.463  0.574  0.814          2061.373
+S3           8333.1   144.2  0.183  0.592  0.279   0.463  0.562  0.817          2055.832
+S3-O         7876.9   144.2  0.135  0.484  0.210   0.773  0.453  0.865            25.913
+A-RB         3603.6   144.2  0.184  0.471  0.264   4.469  0.386  0.816            24.064
+A-RX         3945.7   144.2  0.189  0.427  0.261   4.941  0.348  0.811            22.544
+A-AM         2378.3   144.2  0.203  0.387  0.265   5.069  0.325  0.797            22.544
+A-RV         6251.5   144.2  0.179  0.561  0.271   3.529  0.477  0.821            25.913
+S3-9D        8349.1   144.2  0.183  0.594  0.278   0.465  0.562  0.817          2058.508
+== detectors on the new telemetry (Table 8) (13:31:46)
+seed 2 done
+seed 1 done
+seed 3 done
+seed 5 done
+seed 4 done
+seed 6 done
+seed 8 done
+seed 7 done
+seed 9 done
+seed 10 done
+                            P      R     F1    MTTD    FAR
+variant detector split                                    
+A-AM    base     dev    0.194  0.370  0.254   4.531  0.806
+                 test   0.213  0.404  0.277   5.606  0.787
+        base2    dev    0.725  0.224  0.341   7.465  0.275
+                 test   0.700  0.263  0.382   9.682  0.300
+        cusum    dev    0.799  0.246  0.374  11.028  0.201
+                 test   0.817  0.274  0.408  10.874  0.183
+        ph       dev    0.833  0.238  0.369  10.739  0.167
+                 test   0.859  0.262  0.400  10.127  0.141
+        rewma    dev    0.725  0.221  0.338   8.078  0.275
+                 test   0.718  0.250  0.369   8.507  0.282
+        shewhart dev    0.710  0.247  0.365  10.384  0.290
+                 test   0.733  0.272  0.395  11.158  0.267
+A-RB    base     dev    0.170  0.457  0.248   4.077  0.830
+                 test   0.198  0.485  0.280   4.862  0.802
+        base2    dev    0.560  0.258  0.351   7.538  0.440
+                 test   0.590  0.306  0.402   8.758  0.410
+        cusum    dev    0.643  0.273  0.381  10.558  0.357
+                 test   0.696  0.298  0.412  10.413  0.304
+        ph       dev    0.773  0.258  0.384   9.977  0.227
+                 test   0.789  0.292  0.423  10.183  0.211
+        rewma    dev    0.575  0.245  0.341   7.663  0.425
+                 test   0.564  0.284  0.376   8.687  0.436
+        shewhart dev    0.584  0.269  0.366   9.715  0.416
+                 test   0.605  0.306  0.401  10.698  0.395
+A-RV    base     dev    0.166  0.542  0.253   3.190  0.834
+                 test   0.193  0.580  0.288   3.868  0.807
+        base2    dev    0.641  0.390  0.482   4.348  0.359
+                 test   0.627  0.395  0.484   6.142  0.373
+        cusum    dev    0.723  0.411  0.524   6.315  0.277
+                 test   0.721  0.401  0.514   7.125  0.279
+        ph       dev    0.804  0.402  0.535   6.173  0.196
+                 test   0.780  0.395  0.524   7.017  0.220
+        rewma    dev    0.676  0.389  0.492   4.519  0.324
+                 test   0.628  0.386  0.477   5.622  0.372
+        shewhart dev    0.675  0.413  0.512   6.051  0.325
+                 test   0.650  0.406  0.498   7.132  0.350
+A-RX    base     dev    0.175  0.409  0.245   4.563  0.825
+                 test   0.203  0.444  0.277   5.319  0.797
+        base2    dev    0.528  0.260  0.345   7.037  0.472
+                 test   0.523  0.294  0.376   8.807  0.477
+        cusum    dev    0.590  0.281  0.379  10.001  0.410
+                 test   0.610  0.297  0.398  10.072  0.390
+        ph       dev    0.680  0.267  0.381   9.488  0.320
+                 test   0.676  0.291  0.406  10.029  0.324
+        rewma    dev    0.549  0.258  0.347   7.317  0.451
+                 test   0.512  0.283  0.363   8.289  0.488
+        shewhart dev    0.548  0.282  0.369   9.311  0.452
+                 test   0.544  0.303  0.388  10.115  0.456
+S0      base     dev    1.000  0.050  0.096  31.340  0.000
+                 test   1.000  0.062  0.116  34.485  0.000
+        base2    dev    1.000  0.050  0.096  31.340  0.000
+                 test   1.000  0.062  0.116  34.485  0.000
+        cusum    dev    1.000  0.077  0.142  33.842  0.000
+                 test   1.000  0.074  0.136  35.764  0.000
+        ph       dev    1.000  0.071  0.132  34.257  0.000
+                 test   1.000  0.071  0.131  35.536  0.000
+        rewma    dev    1.000  0.050  0.096  31.340  0.000
+                 test   1.000  0.051  0.098  32.100  0.000
+        shewhart dev    1.000  0.077  0.142  31.756  0.000
+                 test   1.000  0.075  0.139  36.093  0.000
+S1      base     dev    0.191  0.370  0.251   4.923  0.809
+                 test   0.213  0.401  0.276   5.622  0.787
+        base2    dev    0.597  0.235  0.334   7.609  0.403
+                 test   0.605  0.273  0.375   9.217  0.395
+        cusum    dev    0.673  0.255  0.367  11.062  0.327
+                 test   0.719  0.278  0.397  10.605  0.281
+        ph       dev    0.787  0.242  0.367  10.560  0.213
+                 test   0.798  0.272  0.403  10.593  0.202
+        rewma    dev    0.617  0.227  0.329   8.142  0.383
+                 test   0.605  0.263  0.365   8.982  0.395
+        shewhart dev    0.633  0.255  0.359  10.278  0.367
+                 test   0.648  0.281  0.389  10.690  0.352
+S2      base     dev    0.168  0.596  0.262   0.390  0.832
+                 test   0.204  0.618  0.306   0.537  0.796
+        base2    dev    0.643  0.460  0.534   0.546  0.357
+                 test   0.634  0.472  0.540   0.558  0.366
+        cusum    dev    0.714  0.461  0.560   0.924  0.286
+                 test   0.696  0.465  0.555   0.404  0.304
+        ph       dev    0.801  0.454  0.579   0.632  0.199
+                 test   0.769  0.462  0.575   0.292  0.231
+        rewma    dev    0.667  0.461  0.544   0.790  0.333
+                 test   0.616  0.479  0.537   1.443  0.384
+        shewhart dev    0.655  0.459  0.539   0.842  0.345
+                 test   0.621  0.476  0.535   1.225  0.379
+S3      base     dev    0.164  0.584  0.256   0.398  0.836
+                 test   0.202  0.600  0.302   0.528  0.798
+        base2    dev    0.617  0.445  0.515   0.647  0.383
+                 test   0.617  0.455  0.522   0.622  0.383
+        cusum    dev    0.680  0.446  0.538   1.024  0.320
+                 test   0.682  0.444  0.533   0.419  0.318
+        ph       dev    0.770  0.438  0.558   0.650  0.230
+                 test   0.753  0.441  0.552   0.296  0.247
+        rewma    dev    0.640  0.445  0.522   0.814  0.360
+                 test   0.598  0.458  0.516   1.486  0.402
+        shewhart dev    0.629  0.443  0.518   0.870  0.371
+                 test   0.608  0.456  0.515   1.257  0.392
+S3-9D   base     dev    0.164  0.583  0.256   0.388  0.836
+                 test   0.201  0.605  0.301   0.543  0.799
+        base2    dev    0.625  0.445  0.518   0.642  0.375
+                 test   0.616  0.453  0.521   0.568  0.384
+        cusum    dev    0.692  0.446  0.542   1.045  0.308
+                 test   0.679  0.444  0.532   0.426  0.321
+        ph       dev    0.783  0.438  0.561   0.649  0.217
+                 test   0.751  0.441  0.552   0.302  0.249
+        rewma    dev    0.643  0.445  0.524   0.812  0.357
+                 test   0.601  0.458  0.517   1.492  0.399
+        shewhart dev    0.633  0.443  0.520   0.872  0.367
+                 test   0.611  0.456  0.516   1.263  0.389
+S3-O    base     dev    0.124  0.468  0.195   0.718  0.876
+                 test   0.146  0.501  0.225   0.829  0.854
+        base2    dev    0.456  0.254  0.324   1.481  0.544
+                 test   0.455  0.280  0.346   2.937  0.545
+        cusum    dev    0.520  0.254  0.341   2.328  0.480
+                 test   0.517  0.267  0.351   2.578  0.483
+        ph       dev    0.605  0.244  0.347   1.436  0.395
+                 test   0.585  0.262  0.360   2.155  0.415
+        rewma    dev    0.484  0.256  0.333   2.108  0.516
+                 test   0.451  0.282  0.346   4.552  0.549
+        shewhart dev    0.471  0.253  0.328   1.944  0.529
+                 test   0.454  0.279  0.343   3.881  0.546
+detector                              base  base2  cusum  ph  rewma  shewhart
+family        signal                                                         
+deterministic pg_stat_statements        60     60     60  60     60        60
+              pg_stat_user_functions    23     23     23  23     23        23
+              pg_stat_user_tables       45     45     45  45     45        45
+err           pg_log_errors           3751    280    183  79    284       287
+lat           pg_stat_statements         0      0      1   0      3         3
+== failure prediction (Table 10) (13:32:22)
+units evaluated: 442, with genuine failures: 108 (0.244); EDI vs size Spearman rho=0.409
+      indicator   auc  auc_lo  auc_hi  flagged  precision  recall    f1
+d_configuration 0.583   0.526   0.638    0.869      0.268   0.954 0.419
+  d_topological 0.540   0.483   0.599    0.552      0.270   0.611 0.375
+         d_role 0.500   0.500   0.500    0.000      0.000   0.000 0.000
+       d_policy 0.511   0.474   0.549    0.844      0.249   0.861 0.387
+d_architectural 0.555   0.503   0.607    0.256      0.327   0.343 0.335
+   d_contextual 0.563   0.499   0.623    0.862      0.257   0.907 0.401
+     d_semantic 0.612   0.556   0.667    0.966      0.251   0.991 0.400
+         d_goal 0.580   0.515   0.644    0.762      0.267   0.833 0.404
+     d_security 0.516   0.480   0.554    0.928      0.249   0.944 0.394
+            EDI 0.639   0.578   0.702    1.000      0.244   1.000 0.393
+       size_loc 0.588   0.521   0.655    1.000      0.244   1.000 0.393
+     failure_class  n_units         top_dim                   expected  rank_of_expected  delta_expected  delta_top
+     type_coercion       31 d_configuration d_configuration;d_semantic                 1           0.144      0.144
+dynamic_sql_safety       14 d_architectural                 d_security                 7          -0.029      0.203
+     txn_semantics       12 d_architectural               d_contextual                 5           0.141      0.615
+    error_handling       10        d_policy                 d_semantic                 2           0.150      0.162
+ privilege_context        9      d_semantic        d_policy;d_security                 7          -0.152      0.073
+    null_semantics        6      d_semantic    d_semantic;d_contextual                 1           0.310      0.310
+ remote_dependency        5   d_topological   d_security;d_topological                 1           0.399      0.399
+temporal_semantics        3 d_architectural    d_semantic;d_contextual                 4           0.155      0.782
+     package_state        2      d_semantic            d_architectural                 7          -0.218      0.310
+unit-weighted rank of the expected dimension: 3.36 (chance 4.01); expected dim ranked first in 3/9 classes
+== comparison with the recorded run (13:32:29)
+SAME     e2e/out/e2e_units.csv {'max_abs_diff': 0.0, 'column': None}
+SAME     e2e/out/e2e_objects.csv {'max_abs_diff': 0.0, 'column': None}
+SAME     e2e/out/e2e_units_9d.csv {'max_abs_diff': 0.0, 'column': None}
+SAME     e2e/out/e2e_drift9_summary.csv {'max_abs_diff': 0.0, 'column': None}
+DIFFERS  e2e/out/ont_indep_gold.csv {'reason': 'shape/columns differ (2494, 8) vs (2492, 8)'}
+SAME     e2e/out/e2e_runs_ext.csv {'max_abs_diff': 0.0, 'column': None}
+DIFFERS  ops/out/ops_runs_method.csv {'max_abs_diff': 15.0, 'column': 'FP'}
+Table 7 F1 regenerated         {'S0': 0.3691, 'S1': 0.4794, 'S2': 0.7704, 'S3': 0.7659, 'S3-O': 0.6033}
+Table 7 F1 published (orig.)   {'S0': 0.3766, 'S1': 0.4836, 'S2': 0.7703, 'S3': 0.7681, 'S3-O': 0.603} max |diff| = 0.0075
+equal to deterministic re-run: True
+DIFFERS  boundary_failure_prediction.csv (Table 10) {'equal': False, 'max_abs_diff': 0.013224595377229642, 'column': 'auc_hi'}
